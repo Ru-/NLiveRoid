@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:stretchColumns="0,1"
+	android:id="@+id/linearLayout2" android:layout_width="fill_parent">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<TableLayout android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:stretchColumns="0">
+			<TableRow>
+			<TableLayout
+			android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:stretchColumns="0,1,2,3,4,5">
+			<TableRow>
+			    <TextView
+			android:text="140"
+			android:id="@+id/tweet_char_count"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			        ></TextView>
+			<CheckBox
+			android:text="【...】"
+			android:id="@+id/tweet_watching"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></CheckBox>
+			<CheckBox
+			android:text="Title"
+			android:id="@+id/tweet_title"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></CheckBox>
+			<CheckBox
+			android:text="URL"
+			android:id="@+id/tweet_url"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></CheckBox>
+			<CheckBox
+			android:text="#co"
+			android:id="@+id/tweet_co"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></CheckBox>
+			<Button
+			android:text="クリア"
+			android:id="@+id/tweet_clear"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></Button>
+				</TableRow>
+
+</TableLayout>
+			</TableRow>
+
+			<TableRow><!-- 後から左右パディングじゃないと駄目みたい -->
+				<EditText
+				    android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:id="@+id/tweet_et"
+					android:maxLength="140"></EditText>
+			</TableRow>
+			<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal">
+			    <Button android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:id="@+id/tweet_ok"
+			        android:text="投稿"/>
+			    <Button android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:text="CANCEL"
+			        android:id="@+id/tweet_cancel"
+			        android:layout_weight="1"/>
+			</LinearLayout>
+		</TableLayout>
+	</ScrollView>
+
+</LinearLayout>

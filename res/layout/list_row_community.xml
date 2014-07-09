@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#00000000"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+<LinearLayout
+android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="left"
+	android:layout_gravity="left">
+			<ImageView android:layout_gravity="left"
+				android:id="@+id/community_thumbnail"
+				android:layout_width="96.0dip" android:layout_height="96.0dip"
+				android:background="@drawable/noimage"
+				android:scaleType="centerCrop">
+			</ImageView>
+			<TableLayout
+			    android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TableRow>
+					<TextView android:id="@+id/communityid"
+						android:singleLine="true" android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:text="コミュID"></TextView>
+				</TableRow>
+				<TableRow>
+					<LinearLayout android:id="@+id/tag_linear" android:layout_height="12dip"
+						android:layout_width="fill_parent"></LinearLayout>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/livetitle"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:singleLine="true" android:text="放送タイトル"></TextView>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/starttime"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:text="開始時間"></TextView>
+				</TableRow>
+				<TableRow>
+	<TableLayout
+						android:layout_height="fill_parent" android:layout_width="fill_parent"
+						android:stretchColumns="1">
+						<TableRow>
+					<TextView android:id="@+id/viewcount"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:text="来場者数"></TextView>
+					<TextView android:id="@+id/rescount"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:text="コメント数"></TextView>
+						</TableRow>
+						</TableLayout>
+				</TableRow>
+
+			</TableLayout>
+			</LinearLayout>
+						<FrameLayout
+						android:id="@+id/progress_frame"
+						android:layout_height="fill_parent"
+						android:layout_width="fill_parent">
+<ProgressBar android:layout_width="96.0dip"
+					android:layout_height="96.0dip" style="@android:style/Widget.ProgressBar"
+					android:id="@+id/progressBar1">	</ProgressBar>
+					</FrameLayout>
+</FrameLayout>

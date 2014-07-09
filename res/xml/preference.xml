@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+
+	<PreferenceCategory android:title="アカウント設定">
+		<PreferenceScreen
+			android:title="アカウント">
+			<PreferenceCategory android:title="アカウント 1">
+				<CheckBoxPreference android:title="常にこのアカウントを利用"
+					android:id="@+id/always_use1" android:defaultValue="false"
+					android:key="always_use1">
+				</CheckBoxPreference>
+				<EditTextPreference android:title="メールアドレス"
+					android:key="user_id1" android:defaultValue=""
+					android:inputType="text" android:id="@+id/user_id1"
+					android:dialogTitle="USERID 1">
+				</EditTextPreference>
+				<EditTextPreference android:title="パスワード"
+					android:key="password1" android:defaultValue="" android:id="@+id/password1"
+					android:password="true"
+					android:inputType="text" android:dialogTitle="PASSWORD 1">
+				</EditTextPreference>
+
+			</PreferenceCategory>
+			<PreferenceCategory android:title="アカウント 2">
+				<CheckBoxPreference android:title="常にこのアカウントを利用"
+					android:id="@+id/always_use2" android:defaultValue="false"
+					android:key="always_use2">
+				</CheckBoxPreference>
+				<EditTextPreference android:title="メールアドレス"
+					android:key="user_id2" android:defaultValue=""
+					android:inputType="text" android:id="@+id/user_id2"
+					android:dialogTitle="USERID 2">
+				</EditTextPreference>
+				<EditTextPreference android:title="パスワード"
+					android:key="password2" android:defaultValue="" android:id="@+id/password2"
+					android:password="true"
+					android:inputType="text" android:dialogTitle="PASSWORD 2">
+				</EditTextPreference>
+			</PreferenceCategory>
+				<PreferenceCategory android:title="確認">
+				<CheckBoxPreference
+				    android:key="ac_confirm"
+				    android:id="@+id/account_confirm"
+				    android:title="起動時に確認する"
+				    />
+				</PreferenceCategory>
+			<PreferenceCategory android:title="Twitter">
+			<PreferenceScreen
+			android:title="Twitterアカウント"
+			android:key="twitter_screen"
+			android:id="@+id/twitter_screen"
+			android:summary="未設定">
+	<intent android:action="android.intent.action.MAIN"
+               android:targetPackage="nliveroid.nlr.main"
+               android:targetClass="nliveroid.nlr.main.TwitterAccount" />
+		</PreferenceScreen>
+		</PreferenceCategory>
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+	<PreferenceCategory android:title="コテハン設定">
+		<PreferenceScreen
+			android:title="コテハン">
+	<intent android:action="android.intent.action.MAIN"
+               android:targetPackage="nliveroid.nlr.main"
+               android:targetClass="nliveroid.nlr.main.HandleNameList" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+<PreferenceCategory android:title="アラートの設定" android:id="@+id/alert_screen"/>
+		<PreferenceScreen android:title="アラート">
+			<PreferenceCategory android:title="アラート設定"/>
+				<CheckBoxPreference android:title="有効にする"
+					android:id="@+id/alert_enable"
+					android:defaultValue="false"
+					android:key="alert_enable">
+				</CheckBoxPreference>
+				<CheckBoxPreference android:title="バイブ"
+					android:id="@+id/alert_vibration_enable"
+					android:defaultValue="false"
+					android:key="alert_vibration_enable">
+				</CheckBoxPreference>
+				<CheckBoxPreference android:title="通知音"
+					android:id="@+id/alert_sound_notif"
+					android:defaultValue="false"
+					android:key="alert_sound_notif">
+				</CheckBoxPreference>
+				<CheckBoxPreference android:title="LED"
+					android:id="@+id/alert_led"
+					android:defaultValue="false"
+					android:key="alert_led">
+				</CheckBoxPreference>
+				<nliveroid.nlr.main.AlertPrefDialog
+        			android:key="alert_interval"
+        			android:title="アクセス頻度">
+        		</nliveroid.nlr.main.AlertPrefDialog>
+				<nliveroid.nlr.main.AlertPrefDialog
+        			android:key="alert_community"
+        			android:title="コミュニティ読み込み">
+        		</nliveroid.nlr.main.AlertPrefDialog>
+<!-- 				<Preference -->
+<!-- 				android:key="alert_sound_uri" -->
+<!--         android:title="サウンドを着信音から選択" -->
+<!-- 				> -->
+<!-- <intent android:action="android.intent.action.MAIN" -->
+<!--                android:targetPackage="nliveroid.nlr.main" -->
+<!--                android:targetClass="nliveroid.nlr.main.SoundSelectActivity" /> -->
+<!--                </Preference> -->
+		</PreferenceScreen>
+
+	<PreferenceCategory android:title="設定のインポート/エクスポート">
+
+	<nliveroid.nlr.main.SettingFileDialog
+		android:title="インポート"
+		android:id="@+id/setting_file_import"
+		android:key="setting_file_import"
+	></nliveroid.nlr.main.SettingFileDialog>
+	<nliveroid.nlr.main.SettingFileDialog
+		android:title="エクスポート"
+		android:id="@+id/setting_file_export"
+		android:key="setting_file_export"
+	></nliveroid.nlr.main.SettingFileDialog>
+	</PreferenceCategory>
+	 <PreferenceCategory android:title="履歴">
+		<nliveroid.nlr.main.TabEnableDialog
+		    android:title="履歴タブ 有/無"
+			android:id="@+id/enable_his"
+			android:key="enable_his"
+			key="enable_his">
+		</nliveroid.nlr.main.TabEnableDialog>
+	</PreferenceCategory>
+<!-- 			android:と別にどのタブを有効にするのか判定しなきゃいけないためkeyとして必要 -->
+
+  <PreferenceCategory android:title="配信">
+ 		<nliveroid.nlr.main.EnableBCDialog android:title="配信タブ 有/無"
+ 		    	android:id="@+id/enable_bc">
+ 		</nliveroid.nlr.main.EnableBCDialog>
+ 	</PreferenceCategory>
+
+	<PreferenceCategory android:title="設定初期化">
+	<nliveroid.nlr.main.SettingFileDialog
+	android:title="設定値を全て消去"
+	android:id="@+id/clear_setting"
+			android:key="clear_setting"
+	></nliveroid.nlr.main.SettingFileDialog>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="チュートリアル">
+	    <PreferenceScreen
+			android:title="使い方ページへ">
+	<intent android:action="android.intent.action.MAIN"
+               android:targetPackage="nliveroid.nlr.main"
+               android:targetClass="nliveroid.nlr.main.parser.TutorialACT" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+				<CheckBoxPreference android:title="ログ"
+				    android:summary="再起後有効 /sdcard/NLiveRoid/NLRLOG.txt\nにアラートのログ(起動中のみ)を保存します"
+					android:id="@+id/nlr_log"
+					android:defaultValue="false"
+					android:key="nlr_log">
+				</CheckBoxPreference>
+</PreferenceScreen>

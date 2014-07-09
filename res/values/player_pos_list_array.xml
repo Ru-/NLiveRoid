@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="player_pos_updown">
+ <item>上</item>
+ <item>下</item>
+</string-array>
+<string-array name="player_pos_rightleft">
+ <item>左</item>
+ <item>右</item>
+</string-array>
+<string-array name="player_posval_rightleftupdown">
+ <item>0</item>
+ <item>1</item>
+</string-array>
+<string-array name="player_pos_rightleftall">
+ <item>左</item>
+ <item>右</item>
+ <item>全面</item>
+</string-array>
+<string-array name="player_posval_rightleftall">
+ <item>0</item>
+ <item>1</item>
+ <item>2</item>
+</string-array>
+
+</resources>

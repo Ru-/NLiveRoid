@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1,2,3,4,5,6"
+	>
+
+<TableRow>
+<nliveroid.nlr.main.CommentTableCell android:text="TYPE" android:id="@+id/seq0"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:drawablePadding="10dip"
+	android:textColor="#000000"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.CommentTableCell>
+
+<nliveroid.nlr.main.CommentTableCell android:text="ID" android:id="@+id/seq1"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.CommentTableCell>
+
+<nliveroid.nlr.main.CommentTableCell android:text="CMD" android:id="@+id/seq2"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.CommentTableCell>
+
+<nliveroid.nlr.main.CommentTableCell android:text="TIME" android:id="@+id/seq3"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.CommentTableCell>
+
+<nliveroid.nlr.main.CommentTableCell android:text="SCORE" android:id="@+id/seq4"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.CommentTableCell>
+
+<nliveroid.nlr.main.CommentTableCell android:text="NUM" android:id="@+id/seq5"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.CommentTableCell>
+]
+<nliveroid.nlr.main.CommentTableCell android:text="COMMENT" android:id="@+id/seq6"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.CommentTableCell>
+</TableRow>
+	</TableLayout>

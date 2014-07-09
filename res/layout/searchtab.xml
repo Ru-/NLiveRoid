@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"  android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/search_root">
+		<LinearLayout android:id="@+id/search_root_linear"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:id="@+id/search_titlebar"
+			android:layout_width="fill_parent"
+			android:layout_height="40.0dip"
+			android:gravity="center"
+			android:layout_gravity="left">
+			<Button android:layout_gravity="left"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/search_reload_bt"
+			    android:text="更新"></Button>
+			<TextView android:textSize="18.0dip" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:id="@+id/search_titletext"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:gravity="center"
+			    android:layout_weight="10"
+				android:paddingRight="15dp"
+				android:text="検索" android:singleLine="true">
+			</TextView>
+			<Button android:layout_gravity="right"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/search_setting_bt"
+			    android:text="設定"></Button>
+		</LinearLayout>
+
+		<ScrollView  android:background="#00000000" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TableLayout android:stretchColumns="0,1"
+			    android:background="#00000000"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<TableRow android:layout_span="2" >
+					<Button android:id="@+id/search_commontag_spinner" android:layout_span="2"
+					android:text="カテゴリ検索▼"
+					android:textSize="20dip"
+					android:nextFocusDown="@+id/search_reload_bt"
+						android:layout_width="fill_parent"	android:layout_height="45dip">
+					</Button>
+				</TableRow>
+				<TableRow android:gravity="center">
+					<EditText
+					android:gravity="center" android:text=""
+					android:imeOptions="actionSearch"
+						android:layout_height="fill_parent" android:id="@+id/search_edittext"
+						android:layout_width="fill_parent" android:inputType="text"
+						></EditText>
+				<TableLayout android:layout_height="wrap_content"
+									android:layout_width="fill_parent"
+									android:stretchColumns="0,1">
+									<TableRow><Button android:layout_height="fill_parent"
+									android:layout_width="wrap_content" android:text="検索"
+									android:id="@+id/searchbutton"></Button>
+								<ImageButton android:layout_height="wrap_content"
+									android:layout_width="wrap_content" android:src="@android:drawable/ic_btn_speak_now"
+									android:id="@+id/voice_search"></ImageButton>
+</TableRow>
+									</TableLayout>
+							</TableRow>
+				<TableRow>
+
+				<FrameLayout android:layout_width="fill_parent" android:layout_height="45dip"
+				android:layout_span="1">
+						<Button
+						android:id="@+id/search_switch_bt"
+					android:text="SP"
+					android:textSize="20sp"
+					android:gravity="center"
+						android:layout_width="fill_parent" android:layout_height="45dip">
+					</Button>
+					</FrameLayout>
+					<Button android:id="@+id/search_sort_spinner"
+					android:textSize="17dip"
+						android:layout_width="fill_parent" android:layout_height="45dip">
+					</Button>
+				</TableRow>
+				<TableRow  android:layout_height="45dip">
+					<Button android:id="@+id/search_mode_spinner"
+					android:textSize="17dip"
+						android:layout_width="wrap_content" android:layout_height="45dip">
+					</Button>
+					<Button android:id="@+id/search_genarate_button"
+						android:layout_width="wrap_content" android:layout_height="45dip"
+					android:textSize="17dip">
+					</Button>
+				</TableRow>
+
+				<TableRow android:gravity="center" android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+					<LinearLayout android:layout_span="2" android:id="@+id/header_parent0"
+						android:layout_width="fill_parent" android:layout_height="fill_parent">
+						<LinearLayout android:layout_span="2"
+						 android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:background="#6d6c6d"
+							android:paddingTop="3dip"
+							android:paddingBottom="3dip">
+							<TextView
+							android:layout_span="2"
+							android:background="#000000"
+								android:textColor="#FFFFFF" android:id="@+id/search_text_label"
+								android:textSize="20dip" android:layout_width="fill_parent"
+								android:layout_height="fill_parent" android:text="新着"
+								android:singleLine="true" android:gravity="center">
+							</TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</TableRow>
+			</TableLayout>
+		</ScrollView>
+
+		<LinearLayout android:id="@+id/progress_area_parent"
+		    android:background="#00000000"
+			android:layout_height="wrap_content" android:layout_width="fill_parent">
+			<LinearLayout android:id="@+id/progress_area"
+		    android:background="#00000000"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<ProgressBar android:id="@+id/ProgressBarHorizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+				</ProgressBar>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/search_list_parent"
+		    android:background="#00000000"
+			android:layout_height="wrap_content" android:layout_width="fill_parent">
+			<ListView android:id="@+id/search_list"
+			    android:background="#00000000"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:divider="#FF999999"
+				android:dividerHeight="0.5sp" android:layout_weight="1.0">
+			</ListView>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<FrameLayout android:id="@+id/layer2" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</FrameLayout>
+</FrameLayout>
+
+

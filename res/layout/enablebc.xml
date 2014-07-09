@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" android:layout_height="fill_parent">
+	    <TableLayout
+	        android:stretchColumns="0"
+android:layout_width="fill_parent" android:layout_height="wrap_content">
+<TableRow>
+<TextView android:id="@+id/enablebc_text"
+android:padding="20dip"
+android:gravity="center"
+android:text=""
+	android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+</TableRow>
+<TableRow>
+<!-- <EditText -->
+<!--     android:inputType="text" -->
+<!--     android:id="@+id/enablebc_et" -->
+<!--     android:layout_margin="20dip" -->
+<!--     android:singleLine="true" -->
+<!--     android:gravity="center" -->
+<!--     android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText> -->
+</TableRow>
+</TableLayout>
+</ScrollView>

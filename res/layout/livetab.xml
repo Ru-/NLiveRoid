@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<LinearLayout android:gravity="center" android:id="@+id/live_titlebar"
+		android:background="@drawable/header" android:layout_width="fill_parent"
+			android:layout_gravity="left"
+		android:layout_height="40dip" >
+		<Button android:layout_gravity="left"
+			    android:layout_width="60dp"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/livetab_reload_bt"
+			    android:text="更新"></Button>
+		<TextView android:textSize="18.0dip" android:textColor="#FFFFFF"
+			android:textStyle="bold" android:id="@+id/livetitletext"
+			android:gravity="center"
+			    android:layout_weight="10"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Live" android:singleLine="true">
+		</TextView>
+			<Button android:layout_gravity="right"
+			    android:layout_width="60dp"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/right_setting_bt"
+			    android:text="設定"></Button>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout android:id="@+id/progresslinear"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<ProgressBar android:id="@+id/ProgressBarHorizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"></ProgressBar>
+</LinearLayout>
+</LinearLayout>
+
+
+	<ScrollView
+	    android:id="@+id/mainscroll"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+    <TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0">
+	<TableRow>
+	    <TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1">
+	<TableRow >
+	<Button
+	android:id="@+id/live_profile_app"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="アプリ履歴"
+	android:layout_marginTop="10dip"
+	android:layout_marginLeft="40dip">
+	</Button>
+	<Button
+	android:id="@+id/live_profile_server"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="前回の履歴"
+	android:layout_marginTop="10dip"
+	android:layout_marginRight="40dip">
+	</Button></TableRow>
+	</TableLayout>
+	</TableRow>
+	<TableRow
+	 android:paddingTop="10dip">
+	<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="放送タイトル"
+	></TextView>
+	</TableRow>
+	<TableRow>
+	<EditText
+	android:id="@+id/live_title_edit"
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="10dip"
+	android:layout_marginLeft="40dip"
+	android:layout_marginRight="40dip">
+	</EditText>
+	</TableRow>
+	<TableRow>
+	<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="放送詳細"
+	>
+	</TextView></TableRow>
+	<TableRow>
+	<EditText
+	android:id="@+id/live_description_edit"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="10dip"
+	android:layout_marginLeft="40dip"
+	android:layout_marginRight="40dip"
+	android:lines="3">
+	</EditText>
+	</TableRow>
+
+	<TableRow>
+	<Button
+	android:id="@+id/live_communityselefct_spinner"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="放送コミュニティ"
+	android:layout_marginTop="10dip"
+	android:layout_marginLeft="40dip"
+	android:layout_marginRight="40dip">
+	</Button>
+
+	</TableRow>
+	<TableRow>
+	<Button
+	android:id="@+id/live_categoryselect_spinner"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="放送カテゴリ"
+	android:layout_marginTop="10dip"
+	android:layout_marginBottom="10dip"
+	android:layout_marginLeft="40dip"
+	android:layout_marginRight="40dip">
+	</Button>
+
+	</TableRow>
+	<TableRow>
+	<TextView
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="タグ"
+	>
+	</TextView>
+
+	</TableRow>
+	<TableRow android:gravity="center">
+
+	<TableLayout
+	    android:id="@+id/tags_table"
+	    android:paddingLeft="5dip"
+	    android:paddingRight="5dip"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="0,1">
+
+<TableRow>
+	<EditText
+	android:id="@+id/live_tag1_edit"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:hint="タグ1"
+	android:lines="1">
+	</EditText>
+	<CheckBox
+	    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="ロック"
+	android:id="@+id/taglock_1"/>
+	</TableRow>
+	<TableRow>
+	<EditText
+	android:id="@+id/live_tag2_edit"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:hint="タグ2"
+	android:lines="1">
+	</EditText><CheckBox
+	    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="ロック"
+	android:id="@+id/taglock_2"/>
+	</TableRow>
+	<TableRow>
+	<EditText
+	android:id="@+id/live_tag3_edit"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:hint="タグ3"
+	android:lines="1">
+	</EditText><CheckBox
+	    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="ロック"
+	android:id="@+id/taglock_3"/>
+	</TableRow>
+    </TableLayout>
+	</TableRow>
+
+
+	<TableRow>
+	    <TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:stretchColumns="0">
+	<TableRow>
+	    <TextView/>
+	     <Button
+	         android:paddingRight="30dip"
+	        android:gravity="right"
+	        android:paddingLeft="30dip"
+	        	        android:id="@+id/add_tag_button"
+	android:layout_height="wrap_content"
+	        android:text="追加"
+	        ></Button>
+	     </TableRow>
+	     </TableLayout>
+	</TableRow>
+<TableRow>
+<CheckBox
+android:id="@+id/live_public_check"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_marginLeft="40dip"
+	android:layout_marginRight="40dip"
+	android:text="コミュニティ限定"></CheckBox>
+</TableRow>
+<TableRow>
+<CheckBox
+android:id="@+id/live_timeshift_check"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_marginTop="10dip"
+	android:layout_marginLeft="40dip"
+	android:layout_marginRight="40dip"
+	android:text="タイムシフト利用"></CheckBox>
+</TableRow>
+
+<TableRow>
+	<Button
+	android:id="@+id/live_getprogram_button"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="50dip"
+	android:layout_marginLeft="40dip"
+	android:layout_marginRight="40dip"
+	android:layout_marginBottom="25dip"
+	android:gravity="center"
+	android:text="枠を取得する"
+	></Button>
+</TableRow>
+	</TableLayout>
+	</ScrollView>
+<FrameLayout
+android:id="@+id/live_loadingframe"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<TableLayout android:id="@+id/tableLayout1"
+android:layout_gravity="center"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:background="@drawable/progress_dialog_shape"
+	>
+	<TableRow android:gravity="center" android:layout_width="wrap_content">
+	<ProgressBar android:id="@+id/progress_d_bar"
+	android:layout_gravity="center"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></ProgressBar>
+		<TextView android:text="Loading program information.." android:id="@+id/progress_dialog_text"
+		android:textSize="17dip"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		</TableRow>
+</TableLayout>
+</FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+                android:id="@+id/update"
+                android:title=""
+                android:icon="@drawable/operation"
+                >
+        </item>
+        <item
+                android:id="@+id/setting"
+                android:title=""
+                android:icon="@drawable/config"
+                >
+        </item>
+        <item
+                android:id="@+id/commentArea_change"
+                android:title=""
+                android:icon="@drawable/comment_area_change"
+                >
+        </item>
+        <item
+                android:id="@+id/live_descOpen"
+                android:title=""
+                android:icon="@drawable/live_desc"
+                >
+        </item>
+        <item
+                android:id="@+id/quick"
+                android:title=""
+                android:icon="@drawable/quick"
+                >
+        </item>
+
+</menu>

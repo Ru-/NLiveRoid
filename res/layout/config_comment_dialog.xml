@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent" android:layout_width="fill_parent"
+     android:background="#000000"
+	>
+<ScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center">
+ <TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="10dip"
+						android:paddingRight="10dip"
+			android:paddingBottom="10dip"
+			android:stretchColumns="0">
+
+			<TableRow
+    android:paddingTop="30dip"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <CheckBox
+			 android:id="@+id/config_184"
+			 android:text="184"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </CheckBox></TableRow>
+			<TableRow
+    android:paddingTop="30dip"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/config_command"
+			 android:text="コマンド"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </Button></TableRow>
+
+<TableRow
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:paddingTop="15dip"
+    android:layout_height="wrap_content">
+			 <CheckBox
+			 android:id="@+id/config_auto_username_check"
+			 android:text="ユーザー名自動取得"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip">
+    </CheckBox>
+    </TableRow>
+    		<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/config_savecomment"
+            android:gravity="center"
+            android:text="コメント保存"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+    <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/config_commentlog"
+            android:gravity="center"
+            android:text="コメントログ取得"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+<!--  	<TableRow -->
+<!--     android:paddingTop="30dip" -->
+<!--         android:gravity="center"> -->
+<!--         <Button android:id="@+id/init_comment_count" -->
+<!--             android:gravity="center" -->
+<!--             android:text="初期コメ取得件数" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="40dip"></Button> -->
+<!--     </TableRow> -->
+<!--     <TableRow -->
+<!--     android:paddingTop="30dip" -->
+<!--         android:gravity="center"> -->
+<!--         <Button android:id="@+id/layer_num" -->
+<!--             android:gravity="center" -->
+<!--             android:text="表示設定" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="40dip"></Button> -->
+<!--     </TableRow> -->
+
+    <TableRow
+    android:paddingTop="15dip"
+        android:gravity="center">
+        <TableLayout android:stretchColumns="0,1">
+            <TableRow>
+                <CheckBox
+                    android:text="自動更新有効"
+                    android:id="@+id/auto_enable"></CheckBox>
+        <Button android:id="@+id/auto_update_comment"
+            android:gravity="center"
+            android:text="更新間隔"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+
+</TableLayout>
+</TableRow>
+    <TableRow
+        android:id="@+id/config_at_row"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+			 <LinearLayout
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+			 <CheckBox
+			 android:id="@+id/config_at_enable"
+			 android:gravity="right"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip">
+    </CheckBox>
+    <TextView
+        android:text="\@でコテ付け"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+    android:layout_height="40dip"
+			 ></TextView>
+    <CheckBox
+			 android:id="@+id/config_at_overwrite"
+			 android:gravity="right"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip">
+    </CheckBox>
+    <TextView
+        android:text="上書き"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+    android:layout_height="40dip"
+			 ></TextView>
+    </LinearLayout>
+    </TableRow>
+
+    <TableRow
+    android:paddingTop="15dip"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+			 <Button
+			 android:id="@+id/speech_setting"
+			 android:text="読み上げ設定"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </Button></TableRow>
+
+ <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+
+			 <Button
+			 android:id="@+id/config_seet"
+			 android:text="座席"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip">
+    </Button></TableRow>
+    <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <TableLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1">
+            <TableRow>
+        <CheckBox android:id="@+id/comment_visible"
+            android:gravity="center"
+            android:text="表示"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+        <Button android:id="@+id/comment_position"
+            android:gravity="center"
+            android:text="定位置"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+
+<!--         <CheckBox android:id="@+id/comment_trans" -->
+<!--             android:gravity="center" -->
+<!--             android:text="透明化" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="40dip"></CheckBox> -->
+    </TableRow>
+</TableLayout>
+</TableRow>
+
+
+    <TableLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1">
+        <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/config_comment_position"
+            android:gravity="center"
+            android:text="XY位置"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+        <Button android:id="@+id/config_comment_dragg"
+            android:gravity="center"
+            android:text="ドラッグ"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+    <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/config_comment_widthheight"
+            android:gravity="center"
+            android:text="全体幅"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+        <Button android:id="@+id/config_columnwidth"
+            android:gravity="center"
+            android:text="列幅"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+</TableLayout>
+<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/config_columnseq"
+            android:gravity="center"
+            android:text="列順"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+    </TableLayout>
+</ScrollView>
+			</LinearLayout>

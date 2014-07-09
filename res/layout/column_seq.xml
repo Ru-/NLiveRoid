@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+ android:layout_width="fill_parent"
+    android:paddingTop="30dip"
+    android:id="@+id/seq_scrollview"
+ >
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<LinearLayout  android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="30dp">
+ <TableLayout
+		android:gravity="center"
+		android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+	android:stretchColumns="0,1,2,3,4,5,6"
+			>
+			 <TableRow android:id="@+id/dummy_root">
+	</TableRow>
+    <TableRow
+        android:gravity="center"
+    android:background="#000000"
+	android:id="@+id/seq_tablerow">
+	<LinearLayout android:background="#FFFFFF"
+    android:layout_margin="4px"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:id="@+id/seq0">
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seq_tv0"/>
+</LinearLayout>
+<LinearLayout android:background="#FFFFFF"
+    android:layout_margin="4px"
+     android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:id="@+id/seq1">
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seq_tv1"/>
+</LinearLayout>
+<LinearLayout android:background="#FFFFFF"
+    android:layout_margin="4px"
+     android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:id="@+id/seq2">
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seq_tv2"/>
+</LinearLayout>
+<LinearLayout android:background="#FFFFFF"
+    android:layout_margin="4px"
+     android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:id="@+id/seq3">
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seq_tv3"/>
+</LinearLayout>
+<LinearLayout android:background="#FFFFFF"
+    android:layout_margin="4px"
+     android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:id="@+id/seq4">
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seq_tv4"/>
+</LinearLayout>
+<LinearLayout android:background="#FFFFFF"
+    android:layout_margin="4px"
+     android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:id="@+id/seq5">
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seq_tv5"/>
+</LinearLayout>
+<LinearLayout android:background="#FFFFFF"
+    android:layout_margin="4px"
+     android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:id="@+id/seq6">
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seq_tv6"/>
+</LinearLayout>
+</TableRow>
+</TableLayout></LinearLayout>
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="100dp"
+android:id="@+id/seq_layer2">
+</FrameLayout>
+</FrameLayout>
+</ScrollView>
+

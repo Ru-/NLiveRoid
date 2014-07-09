@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/black"
+	>
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			>
+				<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+
+				<ImageView
+					android:layout_gravity="left"
+					android:id="@+id/community_thumbnail"
+					android:background="@drawable/noimage"
+					android:layout_width="96.0dip"
+					android:layout_height="96.0dip"
+					>
+				</ImageView>
+				<TableLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				>
+
+				<TextView
+				android:id="@+id/livetitle"
+				 android:maxLines="1"
+				android:layout_height="wrap_content"
+				 android:layout_width="fill_parent"
+				 android:text="放送タイトル"></TextView>
+
+				  <TextView
+				android:id="@+id/description"
+				 android:layout_gravity="bottom"
+				 android:maxLines="1"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="詳細"></TextView>
+
+				 <TextView
+				android:id="@+id/ownername"
+				 android:maxLines="1"
+				 android:layout_gravity="bottom"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="放送主名"></TextView>
+
+				<TextView
+				 android:id="@+id/passedtime"
+				android:layout_height="wrap_content"
+				 android:layout_width="fill_parent"
+				 android:text="経過時間"></TextView>
+				<LinearLayout
+				android:layout_height="wrap_content"
+				 android:layout_width="fill_parent"
+				> <TextView
+				 android:id="@+id/viewcount"
+				android:layout_height="wrap_content"
+				 android:layout_width="wrap_content"
+				 android:text="来場者数   "></TextView>
+
+				  <TextView
+				 android:id="@+id/rescount"
+				android:layout_height="wrap_content"
+				 android:layout_width="wrap_content"
+				 android:text="コメント数"></TextView>
+</LinearLayout>
+
+</TableLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

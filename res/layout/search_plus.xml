@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+ <TableLayout
+		android:gravity="center"
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:stretchColumns="0"
+			android:paddingBottom="5dip">
+
+    <TableRow
+    android:paddingTop="10dip"
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <CheckBox
+			 android:id="@+id/search_fil_official"
+			 android:text="公式"
+			     android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </CheckBox></TableRow>
+    <TableRow
+    android:paddingTop="10dip"
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <CheckBox
+			 android:id="@+id/search_fil_channel"
+			 android:text="チャンネル"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </CheckBox></TableRow>
+
+<TableRow
+    android:paddingTop="10dip"
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <CheckBox
+			 android:id="@+id/search_fil_community"
+			 android:text="ユーザー"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </CheckBox>
+		</TableRow>
+
+<TableRow
+    android:paddingTop="20dip"
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <CheckBox
+			 android:id="@+id/search_fil_nocommunitygroup"
+			 android:text="同一コミュニティをまとめて表示しない"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </CheckBox>
+		</TableRow>
+
+<TableRow
+    android:paddingTop="10dip"
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <CheckBox
+			 android:id="@+id/search_fil_hidecomonly"
+			 android:text="コミュニティ限定番組を表示しない"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </CheckBox>
+		</TableRow>
+			</TableLayout>
+			</ScrollView>

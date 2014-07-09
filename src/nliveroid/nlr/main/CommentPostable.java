@@ -1,0 +1,56 @@
+package nliveroid.nlr.main;
+
+import android.content.Context;
+import android.view.View;
+
+public interface CommentPostable {
+	void setCmd(CommandKey cmd,String kind);
+	CommandMapping getCmd();
+	void showCommandDialog();
+	void showOrientationAlertBuilder();
+	void clearAdapter();
+	Context getAPPContext();
+	void reloadPlayer();
+	void openInitCommentPicker();
+	void updateCommentTable(boolean is_get_between);
+	void layerChange(int which);
+	void setUpdateInterval(byte interval);
+	void allUpdate();
+	void setUpdateBetween(boolean flag);
+	CommentListAdapter createNewAdapter();
+	int getTableWidth(int i);
+	boolean isPortLayt();
+	int getViewWidth();
+	int getViewHeight();
+	int getCellHeight();
+	boolean isUplayout();
+	void setAtHandleName(String id,String nicName);
+	void showSeetDialog();
+	CommentTable getCommentTable();
+	void setOrientation(int which);
+	void getCommentLog(boolean isPremium);
+	void saveComments();
+	View getBufferMark();
+	boolean isScrollEnd();
+	void setSpeachSettingValue(byte isEnable, byte speed,byte vol, byte pich);
+	void disConnectComment();
+	void toScrollEnd();
+	void setSpPlayerOperation(byte operation,byte value);
+	void setAutoHandleName(String id, String result);
+	boolean isContainsUserID(String string);
+	void writeHandleName();
+	float getHeightAdjust();
+	void setFullScreen(boolean isChecked);
+	long getOffTimerStart();
+	byte getOffTimerValue();
+	void shoeTweetDialog();
+	LiveInfo getLiveInfo();
+	boolean listVisibleGetSetter(boolean isSet,boolean isChecked);
+	boolean listPositionGetSetter(boolean isSet, boolean position);
+	void showPositionDialog();
+	void quickAction(int action);
+	boolean showPostArea();
+	void settingChange(int i, byte npValue,byte[] seq);
+	byte[] getColumnSeq();
+	boolean isNsen();
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:background="#000000"
+		android:id="@+id/linearLayout2" android:layout_width="fill_parent">
+<ScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+ <TableLayout
+		android:gravity="center"
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+	android:stretchColumns="0,1"
+			android:paddingLeft="30dip"
+						android:paddingRight="30dip"
+			android:paddingBottom="30dip">
+
+    <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<EditText android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tag_add_edit"></EditText>
+</TableRow>
+<TableRow>
+    <TableLayout
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2">
+        <TableRow>
+            <TextView />
+            <TextView />
+			<Button
+			 android:id="@+id/tag_add_button"
+			 android:text="登録"
+			 android:gravity="center"
+			     android:layout_width="wrap_content"
+    android:layout_height="40dip">
+    </Button>
+    </TableRow>
+    </TableLayout>
+    </TableRow>
+    <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+			 <TableLayout
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tag_arrange_parent">
+    <TableRow >
+<ProgressBar
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tag_progress"
+    ></ProgressBar>
+
+			     <TextView
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="タグ取得中"
+    android:id="@+id/tag_progress_text"
+    android:gravity="center"/>
+</TableRow>
+ </TableLayout>
+			 </TableRow>
+
+ <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/tag_send_button"
+			 android:text="完了"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </Button></TableRow>
+
+			</TableLayout>
+</ScrollView>
+			</LinearLayout>

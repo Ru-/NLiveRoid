@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent" android:layout_width="fill_parent"
+     android:background="#000000"
+	>
+<ScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center">
+
+ <TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="10dip"
+						android:paddingRight="10dip"
+			android:paddingBottom="10dip"
+			android:stretchColumns="0">
+
+<TableRow
+    android:paddingTop="8dip"
+        android:gravity="center">
+        <TextView android:id="@+id/lv_text"
+            android:gravity="center"
+            android:text=""
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></TextView>
+    </TableRow>
+
+<TableRow
+    android:paddingTop="5dip"
+        android:gravity="center">
+        <TextView android:id="@+id/mode_label"
+            android:gravity="center"
+            android:text="配信モード"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></TextView>
+    </TableRow>
+<TableRow
+    android:paddingTop="10dip"
+        android:gravity="center">
+        <Button android:id="@+id/live_mode_bt"
+            android:gravity="center"
+            android:text="モード"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <CheckBox android:id="@+id/stream_start_cb"
+            android:gravity="center"
+            android:text="ストリームスタート"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+    </TableRow>
+			<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/live_info_setting"
+            android:gravity="center"
+            android:text="配信設定"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+
+    <TableRow
+    android:paddingTop="15dip"
+        android:gravity="center">
+        <TextView
+            android:gravity="center"
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="Audio"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center">
+        <TableLayout android:stretchColumns="0,1">
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/mic_cb"
+                    android:text="マイク使用" />
+        <Button android:id="@+id/mic_setting"
+            android:gravity="center"
+            android:text="設定"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+    </TableLayout>
+    </TableRow>
+	<TableRow
+    android:paddingTop="15dip"
+        android:gravity="center">
+        <TextView
+            android:gravity="center"
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="Video"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center">
+        <TableLayout android:stretchColumns="0,1">
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cam_cb"
+                    android:text="カメラ使用" />
+        <Button android:id="@+id/cam_setting"
+            android:gravity="center"
+            android:text="設定"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+</TableLayout>
+</TableRow>
+<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <TextView
+            android:gravity="center"
+            android:text="バックグラウンド時"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></TextView>
+    </TableRow>
+<TableRow>
+    <TableLayout android:stretchColumns="0,1">
+        <TableRow>
+                <CheckBox
+                    android:id="@+id/back_mic_cb"
+                    android:text="マイク" />
+        		<CheckBox
+                    android:id="@+id/back_cam_cb"
+                    android:text="カメラ" />
+        		</TableRow>
+        </TableLayout>
+    </TableRow>
+
+<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <TextView
+            android:gravity="center"
+            android:text="音着時"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></TextView>
+    </TableRow>
+<TableRow>
+    <TableLayout android:stretchColumns="0,1">
+        <TableRow>
+                <CheckBox
+                    android:id="@+id/ring_mic_cb"
+                    android:text="マイク" />
+        <CheckBox
+                    android:id="@+id/ring_cam_cb"
+                    android:text="カメラ" />
+        </TableRow>
+        </TableLayout>
+    </TableRow>
+
+<!--     <TableRow -->
+<!--     android:paddingTop="15dip" -->
+<!--         android:gravity="center"> -->
+<!--         <TextView -->
+<!--             android:gravity="center" -->
+<!-- 		android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="fill_parent" -->
+<!-- 			android:text="Video"/> -->
+<!--     </TableRow> -->
+<!-- <TableRow -->
+<!--     android:paddingTop="15dip" -->
+<!--         android:gravity="center"> -->
+
+<!--         <TableLayout android:stretchColumns="0,1"> -->
+<!--             <TableRow> -->
+<!--                <Button android:id="@+id/mode_select" -->
+<!--             android:gravity="center" -->
+<!--             android:text="モード" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="40dip"></Button> -->
+<!--         <Button android:id="@+id/video_setting" -->
+<!--             android:gravity="center" -->
+<!--             android:text="設定" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="40dip"></Button> -->
+<!--     </TableRow> -->
+<!-- </TableLayout> -->
+
+<!-- </TableRow> -->
+    </TableLayout>
+</ScrollView>
+			</LinearLayout>

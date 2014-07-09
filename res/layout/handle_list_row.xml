@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1,2"
+><TableRow
+    android:background="#FFFFFF"
+    android:id="@+id/handle_row"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+><CheckBox
+	android:layout_width="wrap_content"
+	android:layout_height="64dip"
+	android:id="@+id/handle_delete_cb"
+	android:visibility="gone"
+	></CheckBox>"
+	<TextView
+	android:id="@+id/handle_name"
+	android:layout_width="wrap_content"
+	android:layout_height="64dip"
+	android:singleLine="true"
+	android:textSize="22dip"
+	android:gravity="left"
+	android:text=""
+	></TextView>
+	<TextView
+	android:id="@+id/handle_id"
+	android:layout_width="wrap_content"
+	android:layout_height="64dip"
+	android:singleLine="true"
+	android:textSize="22dip"
+	android:gravity="left"
+	android:text=""
+	></TextView>
+	</TableRow>
+</TableLayout>

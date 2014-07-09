@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center">
+	<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1,2,3"
+	>
+<TableRow
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+> <CheckBox android:text="全選択"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:checked="false"
+        android:id="@+id/handle_all_select"></CheckBox>
+<Button
+android:id="@+id/addbutton"
+android:text="追加"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+></Button>
+<!-- ダミーを入れる -->
+<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+></TextView><Button
+android:id="@+id/deletebutton"
+android:text="削除"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+></Button>
+
+
+</TableRow>
+	</TableLayout>
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1"
+>
+
+<TableRow
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+>
+	<TextView
+	android:id="@+id/handle_head_name"
+	android:layout_width="wrap_content"
+	android:layout_height="64dip"
+	android:maxLines="1"
+	android:textSize="22dip"
+	android:gravity="left"
+	android:text="User Name"
+	></TextView>
+	<TextView
+	android:id="@+id/handle_head_id"
+	android:layout_width="wrap_content"
+	android:layout_height="64dip"
+	android:maxLines="1"
+	android:textSize="22dip"
+	android:gravity="left"
+	android:text="User ID"
+	></TextView>
+	</TableRow>
+</TableLayout>
+   <ListView android:id="@+id/handle_list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:scrollingCache="false"
+		android:fastScrollEnabled="true"
+		android:divider="#FF999999" android:dividerHeight="0.5sp"
+		android:layout_weight="1.0">
+	</ListView>
+</LinearLayout>

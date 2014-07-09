@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+	<TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="10dip"
+						android:paddingRight="10dip"
+			android:paddingBottom="10dip"
+			android:stretchColumns="0">
+			<TableRow
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:gravity="center_horizontal" >
+			    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			     	android:visibility="gone"
+			        android:text=""
+			        android:id="@+id/ts_tv" />
+			</TableRow>
+			<TableRow
+			    android:gravity="left">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></LinearLayout>
+			 <Button
+			     android:id="@+id/ts_delete"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:gravity="right"
+			     android:visibility="gone"
+			     android:text="削除" >
+    </Button>
+    </TableRow>
+<TableRow>
+    <ListView
+        android:layout_span="2"
+        android:id="@android:id/list"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:scrollingCache="false" android:divider="#FFFFFF"
+					android:dividerHeight="0.5sp"></ListView>
+
+</TableRow>
+
+    </TableLayout>
+     <FrameLayout
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:foregroundGravity="center"
+            android:layout_gravity="center">
+        <ProgressBar
+            android:id="@+id/ts_progress"
+            android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:indeterminate="false"
+        style="?android:attr/progressBarStyleSmall" />
+    </FrameLayout>
+			</FrameLayout>

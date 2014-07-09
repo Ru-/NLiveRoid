@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+ android:layout_width="fill_parent"
+ >
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+android:id="@+id/seq_f_layer2">
+ <TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+	android:stretchColumns="0,1,2,3,4,5,6"
+	android:id="@+id/seq_tablelayout"
+			>
+
+<TableRow android:gravity="center">
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="30dip"
+    android:layout_span="7"
+        android:text="ドラッグ"></TextView>
+</TableRow>
+    <TableRow
+        android:gravity="center"
+        android:background="#9966ffff"
+	android:id="@+id/column_width_row">
+	<LinearLayout android:background="#F2F2F2"
+	    android:layout_marginRight="1px"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/seq0">
+<TextView  android:background="#FFFFFF"
+	    android:layout_marginRight="1px"
+    android:layout_marginTop="10px"
+    android:layout_marginBottom="10px"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:id="@+id/seq_tv0"/>
+</LinearLayout>
+<LinearLayout android:background="#F2F2F2"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/seq1">
+
+<TextView  android:background="#FFFFFF"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+    android:layout_marginTop="10px"
+    android:layout_marginBottom="10px"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:id="@+id/seq_tv1"/>
+</LinearLayout>
+<LinearLayout android:background="#F2F2F2"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/seq2">
+
+<TextView  android:background="#FFFFFF"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+    android:layout_marginTop="10px"
+    android:layout_marginBottom="10px"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:id="@+id/seq_tv2"/>
+</LinearLayout>
+<LinearLayout android:background="#F2F2F2"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/seq3">
+
+<TextView  android:background="#FFFFFF"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+    android:layout_marginTop="10px"
+    android:layout_marginBottom="10px"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:id="@+id/seq_tv3"/>
+</LinearLayout>
+<LinearLayout android:background="#F2F2F2"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/seq4">
+
+<TextView  android:background="#FFFFFF"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+    android:layout_marginTop="10px"
+    android:layout_marginBottom="10px"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:id="@+id/seq_tv4"/>
+</LinearLayout>
+<LinearLayout android:background="#F2F2F2"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/seq5">
+<TextView  android:background="#FFFFFF"
+	    android:layout_marginLeft="1px"
+	    android:layout_marginRight="1px"
+    android:layout_marginTop="10px"
+    android:layout_marginBottom="10px"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:id="@+id/seq_tv5"/>
+</LinearLayout>
+<LinearLayout android:background="#F2F2F2"
+	    android:layout_marginLeft="1px"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/seq6">
+<TextView  android:background="#FFFFFF"
+	    android:layout_marginLeft="1px"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="10px"
+    android:layout_marginBottom="10px"
+    android:layout_height="200dp"
+    android:id="@+id/seq_tv6"/>
+</LinearLayout>
+</TableRow>
+<TableRow android:gravity="center">
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_span="7"
+        android:text="表示/非表示"></TextView>
+</TableRow>
+<TableRow
+    android:gravity="center">
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_span="7">
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:checked="true"
+    android:id="@+id/column_width_cb0"></CheckBox>
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:checked="true"
+    android:id="@+id/column_width_cb1"></CheckBox>
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:checked="true"
+    android:id="@+id/column_width_cb2"></CheckBox>
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:checked="true"
+    android:id="@+id/column_width_cb3"></CheckBox>
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:checked="true"
+    android:id="@+id/column_width_cb4"></CheckBox>
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:checked="true"
+    android:id="@+id/column_width_cb5"></CheckBox>
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:checked="true"
+    android:id="@+id/column_width_cb6"></CheckBox>
+
+    </LinearLayout>
+</TableRow>
+<TableRow android:gravity="center">
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_span="7">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/column_width_bt0"></TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/column_width_bt1"></TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/column_width_bt2"></TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/column_width_bt3"></TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/column_width_bt4"></TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/column_width_bt5"></TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/column_width_bt6"></TextView>
+    </LinearLayout>
+</TableRow>
+</TableLayout>
+<LinearLayout  android:layout_width="fill_parent"  android:layout_height="fill_parent"
+    android:background="#00000000" android:id="@+id/seq_linear"></LinearLayout>
+</FrameLayout>
+</ScrollView>
+

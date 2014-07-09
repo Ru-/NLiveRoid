@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:stretchColumns="0,1"
+		android:id="@+id/linearLayout2" android:layout_width="fill_parent">
+<ScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+ <TableLayout
+		android:gravity="center"
+		android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="0">
+			<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <TextView
+			 android:text="SeetSelect"
+			 android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    </TextView></TableRow>
+    <TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <TextView
+			 android:text="座席は存在しないかもしれません。"
+			 android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    </TextView></TableRow>
+			<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/seet_arina"
+			 android:text="アリーナ"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    </Button></TableRow>
+			<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/seet_a"
+			 android:text="立ち見A"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    </Button></TableRow>
+    			<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/seet_b"
+			 android:text="立ち見B"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    </Button></TableRow>
+    			<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/seet_c"
+			 android:text="立ち見C"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    </Button></TableRow>
+
+
+			</TableLayout>
+</ScrollView>
+			</LinearLayout>

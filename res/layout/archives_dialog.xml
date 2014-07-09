@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent" android:layout_width="fill_parent"
+     android:background="#000000"
+	>
+ <TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingBottom="10dip"
+			android:stretchColumns="0,1">
+			<TableRow>
+	<ListView android:id="@android:id/list"
+	    android:visibility="gone"
+					android:layout_width="wrap_content" android:layout_height="fill_parent"
+					android:scrollingCache="false" android:divider="#FFFFFF"
+					android:dividerHeight="0.5sp" android:layout_weight="1.0"></ListView>
+			    </TableRow>
+    </TableLayout>
+    <FrameLayout
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:foregroundGravity="center"
+            android:layout_gravity="center">
+        <ProgressBar
+            android:id="@+id/archives_progress"
+            android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:indeterminate="false"
+        style="?android:attr/progressBarStyleSmall" />
+    </FrameLayout>
+			</FrameLayout>

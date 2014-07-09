@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_gravity="center"
+	android:background="#00000000"
+	android:layout_height="fill_parent">
+	<LinearLayout android:gravity="center" android:id="@+id/commu_titlebar"
+	    android:layout_width="fill_parent"
+		android:layout_height="40dip" >
+		<Button android:layout_gravity="left"
+			    android:layout_width="60dp"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/commu_reload_bt"
+			    android:text="更新"></Button>
+		<TextView android:textSize="18.0dip" android:textColor="#FFFFFF"
+			android:textStyle="bold" android:id="@+id/community_titletext"
+			    android:layout_weight="10"
+			    android:gravity="center"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="参加中コミュニティ" android:singleLine="true"></TextView>
+		<Button android:layout_gravity="right"
+			    android:layout_width="60dp"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/right_setting_bt"
+			    android:text="設定"></Button>
+	</LinearLayout>
+
+	<LinearLayout android:paddingTop="40dip"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		    android:orientation="vertical">
+<!-- 		<WebView android:layout_width="fill_parent" -->
+<!-- 				    android:id="@+id/ad_wv" -->
+<!-- 				    android:scrollbars="none" -->
+<!-- 				    android:layout_height="50dp" -->
+<!-- 				    android:background="#00ff00" -->
+<!-- 					android:scrollbarAlwaysDrawHorizontalTrack="false" -->
+<!-- 					android:scrollbarAlwaysDrawVerticalTrack="false" ></WebView> -->
+		<LinearLayout
+	    android:id="@+id/comm_movepane_root"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    <LinearLayout
+		    android:id="@+id/comm_live_pane"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    android:orientation="vertical">
+				<LinearLayout android:id="@+id/progresslinear"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<ProgressBar android:id="@+id/ProgressBarHorizontal"
+						android:layout_width="fill_parent" android:layout_height="fill_parent"></ProgressBar>
+				</LinearLayout>
+				<ListView android:paddingBottom="50dip" android:id="@android:id/list"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:background="#00000000"
+					android:scrollingCache="false" android:divider="#FF999999"
+					android:dividerHeight="0.5sp" android:layout_weight="1.0"></ListView>
+				</LinearLayout>
+			</LinearLayout>
+	</LinearLayout>
+	<FrameLayout android:id="@+id/frame_lvurl"
+		android:layout_gravity="bottom" android:foregroundGravity="bottom"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TableLayout android:background="#00000000"
+			android:layout_gravity="bottom" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:stretchColumns="0,1">
+			<TableRow android:layout_height="50dip" android:background="#00000000">
+				<EditText android:layout_height="wrap_content"
+					android:singleLine="true" android:hint="lv又はURL"
+					android:layout_width="fill_parent" android:id="@+id/edit_lvurl"></EditText>
+				<Button android:layout_height="fill_parent" android:id="@+id/button_lvurl"
+					android:layout_width="wrap_content" android:text="接続"></Button>
+			</TableRow>
+		</TableLayout>
+	</FrameLayout>
+
+</FrameLayout>

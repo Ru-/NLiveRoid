@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/flash_root_linear" android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:background="#FFFFFF"
+
+	>
+ <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    	android:stretchColumns="0,1,2,3"
+    	android:id="@+id/parent_table"
+        >
+        <TableRow>
+<TableLayout
+    	android:paddingLeft="5dp"
+        android:layout_span="3"
+    	android:stretchColumns="0,1,2,3"
+    	android:layout_gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+        <TableRow>
+        <TextView
+            android:text="コメント"
+            android:layout_span="2"
+           	android:id="@+id/comment_count"
+            android:textColor="#000000"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+        <TextView
+            android:text="来場者"
+            android:layout_span="2"
+           	android:id="@+id/view_count"
+            android:textColor="#000000"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+			</TableRow>
+			<TableRow android:paddingBottom="10dp">
+        <TextView
+            android:text="残り時間"
+            android:layout_span="2"
+           	android:id="@+id/remain_time"
+            android:textColor="#000000"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+        <TextView
+            android:text=""
+            android:layout_span="2"
+            android:textColor="#000000"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+        </TableRow>
+            </TableLayout>
+            <Button
+                android:id="@+id/live_setting_bt"
+            android:layout_span="1"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:text="設定"
+				/>
+        </TableRow>
+		    <TableRow android:id="@+id/surface_row">
+		        <LinearLayout
+		            android:paddingLeft="5dp"
+		            android:id="@+id/surface_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_span="3">
+    <SurfaceView
+        android:layout_span="3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/camframe" ></SurfaceView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/function_parent"
+        android:layout_span="1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+        android:layout_weight="1"
+        android:id="@+id/function_bt0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></Button>
+        <Button
+        android:layout_weight="1"
+        android:id="@+id/function_bt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></Button>
+        <Button
+        android:layout_weight="1"
+        android:id="@+id/restart_bt"
+        android:text="ストリーム再送信"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+        </TableRow>
+<!-- 		    <TableRow> -->
+<!-- 		        <LinearLayout -->
+<!-- 		            android:layout_span="4" -->
+<!--         android:layout_weight="1" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:background="#9dffa8"></LinearLayout> -->
+<!-- 			</TableRow> -->
+</TableLayout>
+
+		<LinearLayout
+		android:id="@+id/buffering_area"
+					android:visibility="invisible"
+					android:layout_gravity="bottom"
+					android:gravity="center"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+		<FrameLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:foregroundGravity="bottom">
+				<ProgressBar android:layout_width="30dip"
+					android:background="@drawable/buffering_shape"
+					android:layout_gravity="bottom"
+					android:layout_height="30dip" style="@android:style/Widget.ProgressBar"
+					android:id="@+id/progressBar1">	</ProgressBar>
+					<LinearLayout
+					android:layout_gravity="center"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+	<TextView android:layout_height="wrap_content"
+		android:textColor="#bcbcbc"
+		android:textSize="10dip"
+		android:layout_gravity="bottom" android:layout_width="wrap_content"
+		android:text="Comment\ngetting.." android:id="@+id/textView1"></TextView>
+		</LinearLayout>
+			</FrameLayout>
+		</LinearLayout>
+
+
+	<LinearLayout android:id="@+id/postArea_up"
+		android:layout_gravity="top" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableLayout android:id="@+id/overlay_space_parent"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:stretchColumns="0">
+			<TableRow><!-- LinearLayoutをGONEにして全部やってもいいんだけど、結局ソースで表示非表示やる場合はそれぞれのpostareaのコンポーネントをVISIBLE,GONEしなきゃいけないので無駄 -->
+					    <LinearLayout
+					        android:minHeight="30dp"
+					    android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_gravity="left" >
+					        <CheckBox
+					            android:text="184"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:visibility="gone"
+					            android:id="@+id/postarea_184_up"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"></CheckBox>
+					        <Button
+					            android:text="コマンド"
+					            android:visibility="gone"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_command_up"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"
+					            android:background="#00000000"></Button>
+					          <CheckBox
+					            android:text="コメ欄"
+					            android:visibility="gone"
+					            android:checked="true"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_commentdisp_up"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"
+					            android:background="#00000000"></CheckBox>
+					         <Button
+					            android:text="更新"
+					            android:visibility="gone"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_update_up"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"
+					            android:background="#00000000"></Button>
+					          <Button
+					            android:text="詳細"
+					            android:visibility="gone"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_desc_up"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"
+					            android:background="#00000000"></Button>
+					        <ImageButton
+					            android:visibility="gone"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_voiceinput_up"
+					android:layout_width="wrap_content"  android:layout_height="fill_parent"
+					android:src="@android:drawable/ic_btn_speak_now"
+					            android:background="#00000000"
+					></ImageButton>
+					         <Button
+					            android:text="MENU"
+					            android:visibility="gone"
+					            android:textColor="#a2a0a0"
+					            android:id="@+id/postarea_menukey_up"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"
+					            android:background="#00000000"></Button>
+					    </LinearLayout>
+					</TableRow>
+			<TableRow>
+				<EditText android:layout_height="fill_parent"
+					android:layout_width="wrap_content" android:id="@+id/postarea_edit_up"
+					android:visibility="gone"></EditText>
+				<Button android:layout_height="fill_parent"  android:layout_width="wrap_content"
+					android:visibility="gone"
+					android:text="コメント" android:id="@+id/postarea_commit_up"></Button>
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+
+
+	<LinearLayout android:id="@+id/list_parent_liner"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/postArea_buttom"
+		android:layout_gravity="bottom" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableLayout android:id="@+id/table_edit_bottom"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:stretchColumns="0">
+			<TableRow>
+					    <LinearLayout
+					        android:orientation="horizontal"
+					    android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_gravity="left"
+				  >
+					         <CheckBox
+					            android:text="184"
+					            android:textColor="#a2a0a0"
+					            android:visibility="gone"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_184_down"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"></CheckBox>
+					        <Button
+					            android:text="コマンド"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:visibility="gone"
+					            android:id="@+id/postarea_command_down"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:background="#00000000"></Button>
+					          <CheckBox
+					            android:text="コメ欄"
+					            android:visibility="gone"
+					            android:checked="true"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_commentdisp_down"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"
+					            android:background="#00000000"></CheckBox>
+					        <Button
+					            android:text="更新"
+					            android:visibility="gone"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_update_down"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"
+					            android:background="#00000000"></Button>
+					          <Button
+					            android:text="詳細"
+					            android:visibility="gone"
+					            android:textColor="#a2a0a0"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_desc_down"
+					            android:layout_width="wrap_content"
+					            android:layout_height="fill_parent"
+					            android:background="#00000000"></Button>
+					        <ImageButton
+					            android:visibility="gone"
+					            android:paddingRight="15dp"
+					            android:id="@+id/postarea_voiceinput_down"
+					android:layout_width="wrap_content"  android:layout_height="fill_parent"
+					android:src="@android:drawable/ic_btn_speak_now"
+					            android:background="#00000000"
+					></ImageButton>
+					         <Button
+					            android:text="MENU"
+					            android:visibility="gone"
+					            android:textColor="#a2a0a0"
+					            android:id="@+id/postarea_menukey_down"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:background="#00000000"></Button>
+					    </LinearLayout>
+					</TableRow>
+			<TableRow>
+				<EditText android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:id="@+id/postarea_edit_down"
+					android:visibility="gone"></EditText>
+				<Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:id="@+id/postarea_commit_down"
+					android:visibility="gone"
+					android:text="コメント"></Button>
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+	<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+	</FrameLayout>
+
+	<FrameLayout android:layout_width="fill_parent"
+	android:id="@+id/layer2" android:layout_height="fill_parent">
+</FrameLayout>
+<FrameLayout android:layout_width="fill_parent"
+	android:id="@+id/layer3" android:layout_height="fill_parent">
+</FrameLayout>
+</FrameLayout>

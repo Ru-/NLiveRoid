@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000" >
+<LinearLayout
+android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="left"
+	android:layout_gravity="left">
+			<ImageView android:layout_gravity="left"
+				android:id="@+id/all_community_thumbnail"
+				android:layout_width="96.0dip" android:layout_height="96.0dip"
+				android:background="@drawable/noimage"
+				android:scaleType="centerCrop">
+			</ImageView>
+			<TableLayout
+			    android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:stretchColumns="0">
+				<TableRow>
+				    <LinearLayout
+				        android:orientation="horizontal"
+				        android:layout_width="fill_parent"
+				    android:layout_height="wrap_content">
+				<LinearLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+					<TextView android:id="@+id/all_communityid"
+						android:singleLine="true" android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:text="コミュIDaaaaaaaaaaaaaaaaaaaa"></TextView>
+					<TextView
+					    android:id="@+id/all_community_update"
+					    android:layout_width="fill_parent"
+					    android:layout_height="match_parent"
+					    android:singleLine="true"
+					    android:text="" >
+</TextView>
+				</LinearLayout>
+				<CheckBox
+				    android:id="@+id/all_commu_alert"
+				    android:visibility="gone"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="right"
+				    android:gravity="center_vertical|fill_horizontal|center"
+				    android:text="アラート" >
+</CheckBox></LinearLayout>"
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/all_community_title"
+					    android:text="コミュタイトルaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:singleLine="true"></TextView>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/all_community_desc"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+					    android:text="コミュ詳細aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+						></TextView>
+				</TableRow>
+				<TableRow>
+				<TableLayout
+						android:layout_height="fill_parent" android:layout_width="fill_parent"
+						android:stretchColumns="2">
+						<TableRow>
+					<TextView android:id="@+id/allco_level"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:text="レベル"></TextView>
+					<TextView android:id="@+id/allco_member"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:text="メンバー"></TextView>
+					<TextView android:id="@+id/allco_movie"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:text="投稿動画"></TextView>
+						</TableRow>
+						</TableLayout>
+				</TableRow>
+				<TableRow>
+				<TableLayout
+						android:layout_height="fill_parent" android:layout_width="fill_parent"
+						android:stretchColumns="1">
+						<TableRow>
+					<TextView android:id="@+id/allco_broadcast"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:text="放送権限"></TextView>
+					<TextView android:id="@+id/allco_bsp"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:text="BSP権限"></TextView>
+						</TableRow>
+						</TableLayout>
+				</TableRow>
+			</TableLayout>
+			</LinearLayout>
+						<FrameLayout
+						android:id="@+id/progress_frame"
+						android:layout_height="fill_parent"
+						android:layout_width="fill_parent">
+<ProgressBar android:layout_width="96.0dip"
+					android:layout_height="96.0dip" style="@android:style/Widget.ProgressBar"
+					android:id="@+id/progressBar1">	</ProgressBar>
+					</FrameLayout>
+</FrameLayout>

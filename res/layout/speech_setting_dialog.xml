@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000000"
+	android:layout_height="fill_parent"
+		android:id="@+id/speech_parent_linear" android:layout_width="fill_parent"
+		android:layout_gravity="center">
+<ScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+ <TableLayout
+		android:gravity="center"
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:stretchColumns="0"
+			android:paddingTop="30dip"
+			android:paddingLeft="30dip"
+						android:paddingRight="10dip"
+			android:paddingBottom="10dip">
+						<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+			 <TextView
+			 android:text="読み上げ"
+			 android:gravity="center"
+			 android:textSize="20dip"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </TextView></TableRow>
+    <TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <CheckBox
+			 android:id="@+id/speech_set_on"
+			 android:text="ON"
+			     android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </CheckBox></TableRow>
+<!-- 		<TableRow -->
+<!-- 	android:layout_width="fill_parent" -->
+<!--     android:layout_height="wrap_content"> -->
+
+<!-- 			 <CheckBox -->
+<!-- 			 android:id="@+id/speech_set_education" -->
+<!-- 			 android:text="教育を受け入れる" -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="40dip"> -->
+<!--     </CheckBox></TableRow> -->
+    <TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:text="スピード"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    ></TextView>
+    </TableRow>
+			<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <SeekBar
+			 android:id="@+id/speech_dialog_speed_seek"
+			 android:max="10"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </SeekBar></TableRow>
+    <TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:text="ピッチ(標準エンジン)"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    ></TextView>
+    </TableRow>
+<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <SeekBar
+			 android:id="@+id/speech_dialog_pich_seek"
+			 android:max="10"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </SeekBar></TableRow>
+<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:text="ボリューム(AquesTalk)"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    ></TextView>
+    </TableRow>
+<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <SeekBar
+			 android:id="@+id/speech_dialog_vol_seek"
+			 android:max="10"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </SeekBar></TableRow>
+
+	<TableRow
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+			 <Spinner
+			 android:id="@+id/speech_dialog_phont_spinner"
+			 android:layout_marginTop="20dip"
+			 android:layout_marginBottom="20dip"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </Spinner></TableRow>
+
+    <TableRow>
+        <TableLayout
+            android:gravity="center"
+		android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="0,1"
+			android:paddingTop="30dip"
+			android:paddingBottom="10dip">
+    <TableRow>
+        <Button android:id="@+id/speech_ok_button"
+            android:text="OK"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+        <Button android:id="@+id/speech_cancel_button"
+            android:text="CANCEL"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+    </TableLayout>
+    </TableRow>
+    </TableLayout>
+</ScrollView>
+			</LinearLayout>

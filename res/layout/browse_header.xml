@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1,2,3"
+	>
+<LinearLayout android:id="@+id/browseheader_titlebar"
+			android:layout_width="fill_parent"
+			android:layout_height="40.0dip"
+			android:gravity="center"
+			android:layout_gravity="left">
+			<Button android:layout_gravity="left"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/browseheader_return_bt"
+			    android:text="切替"></Button>
+			<Button android:layout_gravity="left"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/browseheader_goback_bt"
+			    android:text="前へ"></Button>
+			<ProgressBar android:textSize="18.0dip" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:id="@+id/browseheader_progress"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:gravity="center"
+			    android:layout_weight="10"
+				android:paddingRight="15dp"
+				 android:singleLine="true">
+			</ProgressBar>
+			<Button android:layout_gravity="right"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:id="@+id/browseheader_pc_top"
+			    android:text="生放送TOP"></Button>
+		</LinearLayout>
+</TableLayout>

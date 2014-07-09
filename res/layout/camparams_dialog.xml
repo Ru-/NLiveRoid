@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent" android:layout_width="fill_parent"
+     android:background="#000000"
+	>
+<HorizontalScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center">
+
+ <TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="10dip"
+						android:paddingRight="10dip"
+			android:paddingBottom="10dip">
+
+
+<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/cam_params_scene_bt"
+            android:gravity="center"
+            android:text="シーン"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+        <Button android:id="@+id/cam_params_flash_bt"
+            android:gravity="center"
+            android:text="フラッシュ"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+        <Button android:id="@+id/cam_params_whitebalance_bt"
+            android:gravity="center"
+            android:text="ホワイトバランス"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+         <Button android:id="@+id/cam_params_coloreffect_bt"
+            android:gravity="center"
+            android:text="カラーエフェクト"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+        <Button android:id="@+id/cam_params_anti_bt"
+            android:gravity="center"
+            android:text="アンチバンディング"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+
+<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+
+    </TableRow>
+<!--     <TableRow -->
+<!--     android:paddingTop="30dip" -->
+<!--         android:gravity="center"> -->
+<!--         <Button android:id="@+id/cam_params_anti_bt" -->
+<!--             android:gravity="center" -->
+<!--             android:text="スムースズーム" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="40dip"></Button> -->
+<!--     </TableRow> -->
+    </TableLayout>
+</HorizontalScrollView>
+			</LinearLayout>

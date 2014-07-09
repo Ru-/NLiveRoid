@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+                android:id="@+id/top_menu_item0"
+                android:icon="@drawable/reload"
+                >
+        </item>
+        <item
+                android:id="@+id/top_menu_item2"
+                android:icon="@drawable/ts"
+                >
+        </item>
+        <item
+                android:id="@+id/top_menu_item1"
+                android:icon="@drawable/preferences"
+                >
+        </item>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent" android:layout_width="fill_parent"
+     android:background="#000000"
+	>
+<ScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center">
+ <TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="10dip"
+						android:paddingRight="10dip"
+			android:paddingBottom="10dip"
+			android:stretchColumns="0">
+
+			<TableRow
+    android:paddingTop="30dip"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/config_fixscreen"
+			 android:text="画面回転"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </Button></TableRow>
+
+    <TableRow
+    android:paddingTop="15dip"
+        android:gravity="center">
+        <TableLayout android:stretchColumns="0,1">
+            <TableRow>
+                <CheckBox
+                    android:text="オフタイマー有効"
+                    android:id="@+id/offtimer_enable"></CheckBox>
+        <Button android:id="@+id/offtimer_interval"
+            android:gravity="center"
+            android:text="分"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+</TableLayout>
+</TableRow>
+
+    </TableLayout>
+</ScrollView>
+			</LinearLayout>

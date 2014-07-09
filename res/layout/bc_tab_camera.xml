@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#00000000">
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0"
+    android:paddingLeft="25dip"
+    android:paddingRight="25dip"
+    android:paddingBottom="50dip">
+    <TableRow>
+    <CheckBox
+        android:id="@+id/bc_use_camera"
+        android:text="カメラ映像を送信する"
+        android:textColor="#83dc3a"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="でばいす選択"
+        android:textColor="#83dc3a"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        </TextView>
+            </TableRow>
+            <TableRow>
+                <Spinner
+            android:id="@+id/bc_camdevice_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    </TableRow>
+         <TableRow>
+        <TextView
+            android:text="えんこーど"
+        android:textColor="#83dc3a"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        </TextView>
+            </TableRow>
+            <TableRow>
+    <Spinner android:id="@+id/bc_encode_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    </TableRow>
+     <TableRow>
+       <LinearLayout  android:layout_width="fill_parent"
+    android:layout_height="wrap_content" > <TextView
+            android:text="画質"
+        android:textColor="#83dc3a"
+            android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        </TextView>
+         <TextView
+             android:text="0"
+             android:gravity="right"
+            android:id="@+id/qua_label"
+        android:textColor="#83dc3a"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        </TextView>
+        </LinearLayout>
+            </TableRow>
+    <TableRow>
+        <SeekBar android:id="@+id/bc_quality_seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="99"/><!-- 1～100 -->
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bc_resolution_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="解像度"
+
+        android:textColor="#000000"
+        ></Button>
+        </TableRow>
+         <TableRow>
+             <LinearLayout
+                 android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+                 >
+        <TextView
+            android:text="FPS"
+        android:textColor="#83dc3a"
+            android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+             android:text="0"
+             android:gravity="right"
+            android:id="@+id/fps_label"
+        android:textColor="#83dc3a"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        </TextView></LinearLayout>
+            </TableRow>
+        <TableRow>
+           <SeekBar android:id="@+id/bc_fps_seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="1000" /> <!-- 1～999 -->
+        </TableRow>
+
+     <TableRow>
+         <LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:text="きーふれーむいんたーばる"
+        android:textColor="#83dc3a"
+            android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        </TextView>
+         <TextView
+             android:text="0"
+             android:gravity="right"
+            android:id="@+id/keyframe_label"
+        android:textColor="#83dc3a"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        </TextView></LinearLayout>
+            </TableRow>
+        <TableRow>
+           <SeekBar android:id="@+id/bc_keyframe_seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="47" /><!-- 1～48 -->
+        </TableRow>
+        <TableRow><LinearLayout
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:text="帯域幅"
+        android:textColor="#83dc3a"
+            android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+             android:text="0"
+             android:gravity="right"
+            android:id="@+id/bandwidth_label"
+        android:textColor="#83dc3a"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        </TextView></LinearLayout>
+            </TableRow>
+        <TableRow>
+           <SeekBar android:id="@+id/bc_bandwidth_seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="384" /><!-- 0～384 -->
+        </TableRow>
+<TableRow>
+    <LinearLayout
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+           <TextView
+                android:id="@+id/bc_motionlevel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="もーしょん検知"
+        android:textColor="#83dc3a"
+        ></TextView>
+        <TextView
+             android:text="0"
+             android:gravity="right"
+            android:id="@+id/motion_detect_label"
+        android:textColor="#83dc3a"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        </TextView></LinearLayout>
+        </TableRow>
+           <TableRow>
+               <SeekBar
+                android:id="@+id/bc_motiondetect_seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100" /><!-- 0～100 -->
+        </TableRow>
+        <TableRow>
+            <LinearLayout
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+           <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="もーしょんたいむあうと"
+        android:textColor="#83dc3a"
+        ></TextView> <TextView
+             android:text="2000"
+             android:gravity="right"
+            android:id="@+id/motion_timeout_label"
+        android:textColor="#83dc3a"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        </TextView></LinearLayout>
+           </TableRow>
+           <TableRow>
+           <SeekBar
+                android:id="@+id/bc_motiontimeout_seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="10000" /><!-- 0～10000 -->
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
+

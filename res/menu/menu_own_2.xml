@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+         <item
+                android:id="@+id/bc_menu"
+                android:title=""
+                android:icon="@drawable/bc_menu"
+                >
+        </item>
+
+         <item
+                android:id="@+id/layer_change"
+                android:title=""
+                android:icon="@drawable/layer_change2"
+                >
+        </item>
+        <item
+                android:id="@+id/update"
+                android:title=""
+                android:icon="@drawable/operation"
+                >
+        </item>
+
+         <item
+                android:id="@+id/setting"
+                android:title=""
+                android:icon="@drawable/config"
+                >
+        </item>
+        </menu>

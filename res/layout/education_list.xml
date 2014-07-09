@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center"
+	android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#FFFFFF">
+ <TableLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:stretchColumns="0,1,2,3">
+  <TableRow>
+      <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:text="新規"
+    android:textColor="#000000"
+></TextView>
+  <Button
+    android:id="@+id/education_add"
+    android:text="追加"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" ></Button>
+  <TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="全て削除"
+    android:textColor="#000000"
+></TextView>
+  <Button
+    android:id="@+id/education_all_delete"
+    android:text="全削除"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    </Button>
+  </TableRow>
+  </TableLayout>
+  <TableLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:stretchColumns="0">
+  <TableRow >
+      <CheckBox
+    android:id="@+id/chkSort"
+    android:textColor="#000000"
+    android:text="ソートモード"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+  </TableRow>
+  <TableRow
+        android:gravity="center">
+      <ProgressBar
+          android:id="@+id/education_init_progressbar"
+          android:layout_gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+  </TableRow>
+  </TableLayout>
+  <nliveroid.nlr.main.DragnDropListView
+    android:id="@+id/list"
+      android:paddingTop="3dip"
+    android:divider="#b8b8b8"
+ android:dividerHeight="1sp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" />
+</LinearLayout>

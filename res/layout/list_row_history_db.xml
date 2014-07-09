@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#00000000"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/history_parent">"
+
+
+			<TableLayout
+			    android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:stretchColumns="0">
+				<TableRow>
+				    <TextView android:id="@+id/history_date"
+						android:singleLine="true" android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:text="日付(ナノ秒)"></TextView>
+						</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/history_kind"
+						android:singleLine="true" android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:text="種類"></TextView>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/history_lv"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:singleLine="true" android:text="lv"></TextView>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/history_coch"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:singleLine="true" android:text="co|ch"></TextView>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/history_remark0"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:singleLine="true" android:text="備考0"></TextView>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/history_remark1"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:text="備考1"></TextView>
+				</TableRow>
+				<TableRow>
+					<TextView android:id="@+id/history_remark2"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:text="備考2"></TextView>
+				</TableRow>
+			</TableLayout>
+</FrameLayout>

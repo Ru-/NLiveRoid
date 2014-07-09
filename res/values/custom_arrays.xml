@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="fix_screen_entrys">
+ <item>回転する</item>
+ <item>縦固定</item>
+ <item>横固定</item>
+</string-array>
+<string-array name="alpha_entrys">
+ <item>非透明</item>
+ <item>10%</item>
+ <item>50%</item>
+ <item>90%</item>
+</string-array>
+<string-array name="allco_operate_entrys">
+ <item>直近の放送</item>
+ <item>最近の放送履歴</item>
+ <item>[ブラウザ]コミュニティページ</item>
+ <item>[ブラウザ]BBS</item>
+ <item>[ブラウザ]ブロマガ</item>
+ <item>[ブラウザ]オーナーページ</item>
+ <item>退会</item>
+</string-array>
+<string-array name="player_select">
+ <item>スマホ</item>
+ <item>原宿</item>
+</string-array>
+<string-array name="select_back_img">
+ <item>デフォルト</item>
+ <item>画像選択</item>
+</string-array>
+<string-array name="select_tcolor">
+ <item>Gray</item>
+ <item>Black</item>
+ <item>White</item>
+</string-array>
+<string-array name="layer_num">
+ <item>前面</item>
+ <item>背面</item>
+ <item>プレイヤーのみ</item>
+ <item>コメントのみ</item>
+</string-array>
+<string-array name="three_values">
+ <item>0</item>
+ <item>1</item>
+ <item>2</item>
+</string-array>
+<string-array name="for_values">
+ <item>0</item>
+ <item>1</item>
+ <item>2</item>
+ <item>3</item>
+</string-array>
+<string-array name="seven_values">
+ <item>0</item>
+ <item>1</item>
+ <item>2</item>
+ <item>3</item>
+ <item>4</item>
+ <item>5</item>
+ <item>6</item>
+</string-array>
+<string-array name="speech_engine">
+ <item>標準エンジン</item>
+ <item>AquesTalk</item>
+</string-array>
+<string-array name="speech_start">
+ <item>すぐに読み上げる</item>
+ <item>コメ欄のどこかをタップ</item>
+</string-array>
+<string-array name="speech_phont">
+    <item>1.aq_rm</item>
+    <item>2.aq_f1c</item>
+    <item>3.aq_f3a</item>
+    <item>4.aq_rb2</item>
+    <item>5.aq_rb3</item>
+    <item>6.aq_robo</item>
+    <item>7.aq_m4b</item>
+    <item>8.aq_mf1</item>
+    <item>9.aq_huskey</item>
+    <item>10.aq_yukkuri</item>
+</string-array>
+
+<string-array name="player_quality_entrys">
+ <item>low</item>
+ <item>medium</item>
+ <item>high</item>
+</string-array>
+<string-array name="two_values">
+ <item>0</item>
+ <item>1</item>
+</string-array>
+<string-array name="init_commnet_attrs">
+ <item>-</item>
+ <item>-</item>
+ <item>init_comment_count</item>
+</string-array>
+</resources>

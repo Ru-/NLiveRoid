@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:stretchColumns="0,1"
+	android:id="@+id/linearLayout2" android:layout_width="fill_parent">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<TableLayout android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:stretchColumns="0">
+
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView android:gravity="center" android:text="自動入力"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+			</TableRow>
+			<TableRow>
+			<TableLayout
+			android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:stretchColumns="0,1">
+			<TableRow>
+			<CheckBox
+			android:text="Date"
+			android:id="@+id/save_date"
+			android:checked="false"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></CheckBox>
+
+			<CheckBox
+			android:text="CommunityID"
+			android:id="@+id/save_communityid"
+			android:checked="false"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></CheckBox>
+				</TableRow>
+				<TableRow>
+			<CheckBox
+			android:text="Title"
+			android:id="@+id/save_title"
+			android:checked="false"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></CheckBox>
+
+			<CheckBox
+			android:text="OWNER NAME"
+			android:id="@+id/save_ownername"
+			android:checked="false"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></CheckBox>
+				</TableRow>
+</TableLayout>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView android:gravity="center" android:text="ファイル名(xml又はtxt)"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+			</TableRow>
+			<TableRow>
+				<EditText android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/save_edittex"
+					android:inputType="text"></EditText>
+
+			</TableRow>
+			<TableLayout
+		android:stretchColumns="0,1"
+		android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TableRow
+			>
+			<Button
+			android:id="@+id/save_ok"
+			android:text="OK"
+		android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+			<Button
+			android:id="@+id/save_cancel"
+			android:text="CANCEL"
+		android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button></TableRow>
+			</TableLayout>
+		</TableLayout>
+	</ScrollView>
+
+</LinearLayout>

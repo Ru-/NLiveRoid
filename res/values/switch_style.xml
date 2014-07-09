@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="CustomSeekBar" parent="android:Widget.SeekBar">
+	<item name="android:layout_width">fill_parent</item>
+	<item name="android:layout_height">fill_parent</item>
+	<item name="android:thumb">@drawable/switch_thumb</item> <!-- ツマミに利用するdrawableを指定 -->
+	<item name="android:max">1</item> <!-- 最大値。SeekBar全体がこの値で等分される -->
+	<item name="android:progress">0</item> <!-- ツマミの初期位置 -->
+</style>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent" android:layout_width="fill_parent"
+     android:background="#000000"
+	>
+<ScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center">
+ <TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="10dip"
+						android:paddingRight="10dip"
+			android:paddingBottom="10dip"
+			android:stretchColumns="0">
+
+			<TableRow
+    android:paddingTop="60dip"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/config_playerchange"
+			 android:text="プレイヤー切替"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </Button></TableRow>
+
+			<TableRow
+    android:paddingTop="30dip"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+			 <Button
+			 android:id="@+id/config_nsenchange"
+			 android:text="Nsen切替"
+    android:layout_width="fill_parent"
+    android:visibility="gone"
+    android:layout_height="40dip">
+    </Button></TableRow>
+			<TableRow
+    android:paddingTop="30dip"
+    android:paddingBottom="30dip"
+	android:layout_width="fill_parent"
+    android:layout_height="40dip">
+			 <Button
+			 android:id="@+id/config_playerposition"
+			 android:text="位置"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip">
+    </Button></TableRow>
+    <TableRow
+    android:paddingTop="5dip"
+        android:gravity="center">
+        <CheckBox android:id="@+id/config_fullscreen"
+            android:gravity="center"
+            android:text="ステータスバー非表示"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+    </TableRow>
+			<TableRow
+    android:paddingTop="5dip"
+        android:gravity="center">
+        <CheckBox android:id="@+id/config_comment_disable"
+            android:gravity="center"
+            android:text="コメント非表示"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+    </TableRow>
+    <TableRow
+    android:paddingTop="5dip"
+        android:gravity="center">
+        <CheckBox android:id="@+id/config_184_disable"
+            android:gravity="center"
+            android:text="184コメント非表示"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+    </TableRow>
+   <TableRow
+    android:paddingTop="5dip"
+        android:gravity="center">
+        <CheckBox android:id="@+id/config_184_disable_bsp_enable"
+            android:gravity="center"
+            android:text="コメント非表示でもBSP表示"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+    </TableRow>
+    <TableRow
+    android:paddingTop="5dip"
+        android:gravity="center">
+        <CheckBox android:id="@+id/config_mute"
+            android:gravity="center"
+            android:text="ミュート"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+    </TableRow>
+    <TableRow
+    android:paddingTop="5dip"
+        android:gravity="center">
+        <CheckBox android:id="@+id/config_playmovie"
+            android:gravity="center"
+            android:text="コマンドによる動画再生"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+    </TableRow>
+    <TableRow
+    android:paddingTop="5dip"
+        android:gravity="center">
+        <TextView
+            android:gravity="center"
+            android:text="サブ音量"
+            android:id="@+id/config_player_subtext"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></TextView>
+    </TableRow>
+    <TableRow
+    android:paddingTop="0dip"
+        android:gravity="center">
+        <SeekBar android:id="@+id/config_subvolume"
+            android:gravity="center"
+    android:layout_width="wrap_content"
+    android:max="11"
+    android:layout_height="40dip"></SeekBar>
+    </TableRow>
+    </TableLayout>
+</ScrollView>
+			</LinearLayout>

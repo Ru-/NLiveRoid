@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1,2,3,4,5,6"
+	>
+
+<TableRow>
+<nliveroid.nlr.main.NewLineHeader android:text="TYPE" android:id="@+id/nseq0"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:ellipsize="end"
+	android:maxLines="1"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.NewLineHeader>
+
+<nliveroid.nlr.main.NewLineHeader android:text="ID" android:id="@+id/nseq1"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:ellipsize="end"
+	android:maxLines="1"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.NewLineHeader>
+
+<nliveroid.nlr.main.NewLineHeader android:text="CMD" android:id="@+id/nseq2"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:ellipsize="end"
+	android:maxLines="1"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.NewLineHeader>
+
+<nliveroid.nlr.main.NewLineHeader android:text="TIME" android:id="@+id/nseq3"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:ellipsize="end"
+	android:maxLines="1"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.NewLineHeader>
+
+<nliveroid.nlr.main.NewLineHeader android:text="NUM" android:id="@+id/nseq4"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="center"
+	android:textColor="#000000"
+	android:ellipsize="end"
+	android:maxLines="1"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.NewLineHeader>
+<nliveroid.nlr.main.NewLineHeader android:text="NUM" android:id="@+id/nseq5"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:gravity="center"
+	android:textColor="#000000"
+	android:ellipsize="end"
+	android:maxLines="1"
+	android:includeFontPadding="true"
+	></nliveroid.nlr.main.NewLineHeader>
+</TableRow>
+<TableRow>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_span="6">
+<nliveroid.nlr.main.NewLineTableCell android:text="COMMENT" android:id="@+id/nseq6"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="left"
+	android:textColor="#000000"
+	android:ellipsize="none"
+	android:includeFontPadding="true"
+	android:minHeight="1dip"
+	></nliveroid.nlr.main.NewLineTableCell>
+	</LinearLayout>
+</TableRow>
+	</TableLayout>

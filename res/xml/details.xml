@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceCategory android:title=" - タブ画面 -" />
+		<PreferenceCategory android:title="遷移" />
+			<CheckBoxPreference
+                android:id="@+id/return_tab"
+                android:defaultValue="false"
+                android:key="return_tab"
+                android:title="視聴画面終了時にタブ画面へ戻る" >
+            </CheckBoxPreference>
+			<CheckBoxPreference
+                android:id="@+id/update_tab"
+                android:defaultValue="false"
+                android:key="update_tab"
+                android:title="タブ画面遷移時に更新する" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:id="@+id/recent_ts"
+                android:defaultValue="true"
+                android:key="recent_ts"
+                android:title="終了していたら直近の放送又はTSを観に行く" >
+            </CheckBoxPreference>
+		<PreferenceCategory android:title="その他" />
+			<ListPreference
+                android:id="@+id/allco_operate"
+                dialogTitle="参加一覧長タップ時の動作"
+                android:key="allco_operate"
+                android:title="参加中一覧長タップ時の動作" >
+            </ListPreference>
+			<CheckBoxPreference android:title="バックキーでアプリ終了"
+			android:id="@+id/finish_back" android:defaultValue="true"
+			android:key="finish_back">
+			</CheckBoxPreference>
+             <ListPreference
+                android:id="@+id/select_back_img_t"
+                android:key="select_back_img_t"
+                android:title="背景"
+                android:summary="(再起後有効)">
+            </ListPreference>
+            <ListPreference
+                android:id="@+id/toptab_tcolor"
+                android:key="toptab_tcolor"
+                android:title="文字色"
+                android:summary="(再起後有効)">
+            </ListPreference>
+<PreferenceCategory android:title=" - 視聴画面 -" android:summary=""/>
+
+        <PreferenceCategory android:title="プレイヤー" />
+            <ListPreference
+                android:id="@+id/player_select"
+                android:defaultValue="false"
+                android:key="player_select"
+                android:title="プレイヤー選択" >
+            </ListPreference>
+            <CheckBoxPreference
+                android:id="@+id/fix_volenable"
+                android:defaultValue="false"
+                android:key="fix_volenable"
+                android:title="音量を固定する" >
+            </CheckBoxPreference>
+            <nliveroid.nlr.main.SeekBarPreference
+                android:id="@+id/seek_pref"
+                android:key="seek_pref">
+            </nliveroid.nlr.main.SeekBarPreference>
+            <CheckBoxPreference
+                android:id="@+id/manner_0"
+                android:defaultValue="false"
+                android:key="manner_0"
+                android:title="マナーモード時音量を0にする" >
+            </CheckBoxPreference>
+            <ListPreference
+                android:id="@+id/player_quality"
+                dialogTitle="画質選択"
+                android:key="player_quality"
+                android:title="画質">
+            </ListPreference>
+        <PreferenceCategory android:title="コメント欄" />
+            <nliveroid.nlr.main.TableHeightDialog
+                android:id="@+id/init_comment_count"
+                android:title="初期取得件数"
+                android:key="init_comment_count">
+            </nliveroid.nlr.main.TableHeightDialog>
+            <nliveroid.nlr.main.AutoUpdatePreference
+                android:id="@+id/auto_comment_update"
+                android:key="auto_comment_update">
+            </nliveroid.nlr.main.AutoUpdatePreference>
+            <CheckBoxPreference
+                android:id="@+id/newline"
+                android:defaultValue="false"
+                android:key="newline"
+                android:title="改行表示" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:id="@+id/auto_username"
+                android:defaultValue="false"
+                android:key="auto_username"
+                android:title="ユーザー名自動取得" >
+            </CheckBoxPreference>
+			<nliveroid.nlr.main.TableHeightDialog
+                android:id="@+id/cellheight_test"
+                android:title="テキストサイズの調整"
+                android:key="cellheight_test">
+            </nliveroid.nlr.main.TableHeightDialog>
+            <nliveroid.nlr.main.ColumnSeqDialog
+                android:id="@+id/column_seq"
+                android:title="列順"
+                android:key="column_seq">
+            </nliveroid.nlr.main.ColumnSeqDialog>
+            <CheckBoxPreference
+                android:id="@+id/back_black"
+                android:defaultValue="false"
+                android:key="back_black"
+                android:title="背景を黒にする" >
+            </CheckBoxPreference>
+<!-- 		 <ListPreference -->
+<!--                 android:id="@+id/alpha" -->
+<!--                 dialogTitle="透明度" -->
+<!--                 android:key="alpha" -->
+<!--                 android:title="透明度" > -->
+<!--             </ListPreference> -->
+    		<PreferenceScreen android:title="読み上げ">
+			<CheckBoxPreference
+                android:id="@+id/speech_enable"
+                android:defaultValue="true"
+                android:key="speech_enable"
+                android:title="読み上げを有効にする" >
+            </CheckBoxPreference>
+             <ListPreference
+                android:id="@+id/speech_engine"
+                dialogTitle="読み上げの速さ"
+                android:key="speech_engine"
+                android:title="利用エンジン" >
+            </ListPreference>
+            <nliveroid.nlr.main.SettingFileDialog
+				android:title="辞書ファイル削除"
+				android:id="@+id/setting_dic_delete"
+				android:key="setting_dic_delete">
+            </nliveroid.nlr.main.SettingFileDialog>
+            <nliveroid.nlr.main.SpeechSkipCountPicker
+                        android:id="@+id/speech_skip_count"
+                        android:key="speech_skip_count"
+                        android:title="コメントバッファ上限"
+ 						android:summary="X以上読み上げがたまったってきたら破棄">
+            </nliveroid.nlr.main.SpeechSkipCountPicker>
+            <EditTextPreference android:key="speech_skip_word"
+                android:id="@+id/speech_skip_word"
+				 android:title="読み飛ばす際の言葉"
+				 android:maxLength="20"/>
+            <nliveroid.nlr.main.SpeechParamSeekBar android:id="@+id/speech_speed" android:key="speech_speed" ><!-- idはappのkeyと同一じゃないと書きずらくなる -->
+            </nliveroid.nlr.main.SpeechParamSeekBar>
+            <nliveroid.nlr.main.SpeechParamSeekBar android:id="@+id/speech_pich"  android:key="speech_pich" >
+            </nliveroid.nlr.main.SpeechParamSeekBar>
+            <nliveroid.nlr.main.SpeechParamSeekBar android:id="@+id/speech_aques_vol"   android:key="speech_aques_vol" >
+            </nliveroid.nlr.main.SpeechParamSeekBar>
+<!--             <CheckBoxPreference -->
+<!--                 android:id="@+id/speech_education_enable" -->
+<!--                 android:defaultValue="false" -->
+<!--                 android:key="speech_education_enable" -->
+<!--                 android:title="教育を受け入れる" /> -->
+          	<PreferenceScreen
+              android:key="education_screen"
+			android:title="教育">
+			<intent android:action="android.intent.action.MAIN"
+               android:targetPackage="nliveroid.nlr.main"
+               android:targetClass="nliveroid.nlr.main.EducationList" />
+			</PreferenceScreen>
+			<PreferenceCategory  android:title="テスト" />
+	            <nliveroid.nlr.main.SpeechTestPreference
+					android:id="@+id/speech_test"
+					android:key="speech_test"
+					android:title="読み上げテスト">
+	            </nliveroid.nlr.main.SpeechTestPreference>
+			</PreferenceScreen>
+            <PreferenceCategory android:title="縦/横の各設定" />
+        <PreferenceScreen android:title="縦画面時の設定" >
+            <PreferenceCategory android:title="位置"/>
+                    <ListPreference
+	    android:title="プレイヤー位置"
+                        android:key="player_pos_p"
+                        android:id="@+id/player_pos_p">
+                    </ListPreference>
+	<PreferenceCategory android:title="コメント欄の位置" />
+                    <nliveroid.nlr.main.TablePositionDialog
+                        android:id="@+id/x_pos_p"
+                        android:key="x_pos_p"
+                        android:title="X位置" >
+                    </nliveroid.nlr.main.TablePositionDialog>
+                    <CheckBoxPreference
+                        android:id="@+id/xd_enable_p"
+                        android:defaultValue="false"
+                        android:key="xd_enable_p"
+                        android:title="X方向のドラッグを有効" >
+                    </CheckBoxPreference>
+                    <nliveroid.nlr.main.TablePositionDialog
+                        android:id="@+id/y_pos_p"
+                        android:key="y_pos_p"
+                        android:title="Y位置" >
+                    </nliveroid.nlr.main.TablePositionDialog>
+                    <CheckBoxPreference
+                        android:id="@+id/yd_enable_p"
+                        android:defaultValue="true"
+                        android:key="yd_enable_p"
+                        android:title="Y方向のドラッグを有効" >
+                    </CheckBoxPreference>
+                <PreferenceCategory android:title="コメント欄の幅" />
+                    <nliveroid.nlr.main.TablePositionDialog
+                        android:id="@+id/table_bottom_pos_p"
+                        android:key="bottom_pos_p"
+                        android:title="縦幅" >
+                    </nliveroid.nlr.main.TablePositionDialog>
+                    <nliveroid.nlr.main.TablePositionDialog
+                        android:id="@+id/table_width_p"
+                        android:key="width_p"
+                        android:title="横幅" >
+                    </nliveroid.nlr.main.TablePositionDialog>
+                <PreferenceCategory android:title="行の縦幅(テキストサイズ)" />
+            <nliveroid.nlr.main.TableHeightDialog
+                android:id="@+id/cellheight_p"
+                android:title="行の縦幅"
+                android:key="cellheight_p">
+            </nliveroid.nlr.main.TableHeightDialog>
+
+
+                <PreferenceCategory android:title="列の設定" />
+                <PreferenceScreen android:title="列の設定" >
+                    <PreferenceCategory android:title="列幅を0～100の範囲で入力" />
+                    <PreferenceCategory android:title="設定された列以外は自動調整されます" />
+                    <!-- ムズカッタ -->
+<!-- <intent android:action="android.intent.action.MAIN" -->
+<!--                android:targetPackage="nliveroid.nlr.main" -->
+<!--                android:targetClass="nliveroid.nlr.main.ColumnWidthACT" > -->
+<!--                <extra android:name="key" android:value="p" /> -->
+<!--                </intent> -->
+<!-- 		</PreferenceScreen> -->
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/type_width_p"
+                        android:key="type_width_p"
+                        android:value="0"
+                        android:title="ユーザタイプ" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/id_width_p"
+                        android:key="id_width_p"
+                        android:value="0"
+                        android:title="ID" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/command_width_p"
+                        android:key="command_width_p"
+                        android:value="0"
+                        android:title="コマンド" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/time_width_p"
+                        android:key="time_width_p"
+                        android:value="0"
+                        android:title="時間" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/score_width_p"
+                        android:key="score_width_p"
+                        android:value="0"
+                        android:title="NGスコア" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/num_width_p"
+                        android:key="num_width_p"
+                        android:value="0"
+                        android:title="コメ番" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/comment_width_p"
+                        android:key="comment_width_p"
+                        android:value="0"
+                        android:title="コメント" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                </PreferenceScreen>
+            </PreferenceScreen>
+
+
+        <PreferenceScreen android:title="横画面時の設定" >
+            <PreferenceCategory android:title="位置"/>
+                    <ListPreference
+                        android:title="プレイヤー位置"
+                        android:key="player_pos_l"
+                        android:id="@+id/player_pos_l">
+                    </ListPreference>
+			<PreferenceCategory android:title="コメント欄の位置" />
+                    <nliveroid.nlr.main.TablePositionDialog
+                        android:id="@+id/x_pos_l"
+                        android:key="x_pos_l"
+                        android:title="X位置" >
+                    </nliveroid.nlr.main.TablePositionDialog>
+                    <CheckBoxPreference
+                        android:id="@+id/xd_enable_l"
+                        android:defaultValue="false"
+                        android:key="xd_enable_l"
+                        android:title="X方向のドラッグを有効" >
+                    </CheckBoxPreference>
+                    <nliveroid.nlr.main.TablePositionDialog
+                        android:id="@+id/y_pos_l"
+                        android:key="y_pos_l"
+                        android:title="Y位置" >
+                    </nliveroid.nlr.main.TablePositionDialog>
+                    <CheckBoxPreference
+                        android:id="@+id/yd_enable_l"
+                        android:defaultValue="true"
+                        android:key="yd_enable_l"
+                        android:title="Y方向のドラッグを有効" >
+                    </CheckBoxPreference>
+                <PreferenceCategory android:title="コメント欄の幅" />
+                    <nliveroid.nlr.main.TablePositionDialog
+                        android:id="@+id/table_bottom_pos_l"
+                        android:key="bottom_pos_l"
+                        android:title="縦幅" >
+                    </nliveroid.nlr.main.TablePositionDialog>
+                    <nliveroid.nlr.main.TablePositionDialog
+                        android:id="@+id/table_width_l"
+                        android:key="width_l"
+                        android:title="横幅" >
+                    </nliveroid.nlr.main.TablePositionDialog>
+
+                <PreferenceCategory android:title="行の縦幅(テキストサイズ)" />
+            <nliveroid.nlr.main.TableHeightDialog
+                android:id="@+id/cellheight_l"
+                android:title="行の縦幅"
+                android:key="cellheight_l" >
+            </nliveroid.nlr.main.TableHeightDialog>
+
+                <PreferenceCategory android:title="列の設定" />
+                <PreferenceScreen android:title="列の設定" >
+                    <PreferenceCategory android:title="列幅を0～100.の範囲で入力" />
+                    <PreferenceCategory android:title="設定された列以外は自動調整されます" />
+
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/type_width_l"
+                        android:key="type_width_l"
+                        android:value="1"
+                        android:title="ユーザタイプ" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/id_width_l"
+                        android:key="id_width_l"
+                        android:value="1"
+                        android:title="ID" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/command_width_l"
+                        android:key="command_width_l"
+                        android:value="1"
+                        android:title="コマンド" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/time_width_l"
+                        android:key="time_width_l"
+                        android:value="1"
+                        android:title="時間" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/score_width_l"
+                        android:key="score_width_l"
+                        android:value="1"
+                        android:title="NGスコア" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/num_width_l"
+                        android:key="num_width_l"
+                        android:value="1"
+                        android:title="コメ番" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                    <nliveroid.nlr.main.TableWidthDialog
+                        android:id="@+id/comment_width_l"
+                        android:key="comment_width_l"
+                        android:value="1"
+                        android:title="コメント" >
+                    </nliveroid.nlr.main.TableWidthDialog>
+                </PreferenceScreen>
+            </PreferenceScreen>
+        <PreferenceCategory android:title="投稿設定">
+             <CheckBoxPreference
+                android:id="@+id/form_up"
+                android:defaultValue="false"
+                android:key="form_up"
+                android:title="投稿のフォームを上に表示" >
+            </CheckBoxPreference>
+			<CheckBoxPreference
+                android:id="@+id/form_backkey"
+                android:defaultValue="false"
+                android:key="form_backkey"
+                android:title="投稿のフォームをバックキーで閉じる" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:id="@+id/voice_input"
+                android:defaultValue="false"
+                android:key="voice_input"
+                android:title="投稿のフォームの上に操作ボタンを表示" >
+            </CheckBoxPreference>
+        </PreferenceCategory>
+		<PreferenceCategory android:title="その他" />
+            <ListPreference
+                android:id="@+id/layer_num"
+                dialogTitle="表示設定"
+                android:key="layer_num"
+                android:title="表示設定(重要)" >
+            </ListPreference>
+		 <ListPreference
+                android:id="@+id/fix_screen"
+                dialogTitle="画面回転"
+                android:key="fix_screen"
+                android:title="画面回転" >
+            </ListPreference>
+            <CheckBoxPreference android:title="コメント取得はプレイヤー開始後に実行"
+			android:id="@+id/delay_start" android:defaultValue="false"
+			android:key="delay_start"></CheckBoxPreference>
+		<CheckBoxPreference android:title="視聴画面終了時ダイアログ表示"
+			android:id="@+id/fexit" android:defaultValue="false"
+			android:key="fexit">
+		</CheckBoxPreference>
+            <nliveroid.nlr.main.QuickSettingDialog
+                android:id="@+id/quick_setting"
+                android:key="quick_setting"
+                android:title="MENU"
+                android:summary="MENUキー時の動作と表示する項目を設定します">
+            </nliveroid.nlr.main.QuickSettingDialog>
+ 			<CheckBoxPreference
+                android:id="@+id/discard_notification"
+                android:defaultValue="false"
+                android:key="discard_notification"
+                android:title="ステータスバー非表示" >
+            </CheckBoxPreference>
+            <ListPreference
+                android:id="@+id/select_back_img_v"
+                android:key="select_back_img_v"
+                android:title="背景">
+            </ListPreference>
+<PreferenceCategory android:title=" - オフタイマー -" />
+            <nliveroid.nlr.main.OffTimerPreference
+                android:id="@+id/off_timer"
+                android:key="off_timer">
+            </nliveroid.nlr.main.OffTimerPreference>
+
+</PreferenceScreen>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center">
+	<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1"
+	>
+<TableRow
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+>
+<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="リストを更新\n(時間がかかります)"
+>
+</TextView>
+<Button
+android:id="@+id/commu_update"
+android:text="更新"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+></Button>
+</TableRow>
+</TableLayout>
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1,2,3"
+	>
+<TableRow
+android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+>
+<TextView
+android:text="全て選択"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+></TextView><Button
+android:id="@+id/commu_allselect"
+android:text="全て選択"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+></Button>
+<TextView
+android:text="全て解除"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+></TextView><Button
+android:id="@+id/commu_alldeselect"
+android:text="全て解除"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+></Button>
+
+
+</TableRow>
+	</TableLayout>
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1"
+>
+
+<TableRow
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+>
+	<TextView
+	android:id="@+id/commu_head_idtitle"
+	android:layout_width="wrap_content"
+	android:layout_height="64dip"
+	android:maxLines="1"
+	android:textSize="22dip"
+	android:gravity="left"
+	android:text="CommunityID\nTitle"
+	></TextView>
+	<TextView
+	android:id="@+id/commu_head_owner"
+	android:layout_width="wrap_content"
+	android:layout_height="64dip"
+	android:maxLines="1"
+	android:textSize="22dip"
+	android:gravity="left"
+	android:text="OwnerName"
+	></TextView>
+	</TableRow>
+</TableLayout>
+   <ListView android:id="@+id/commu_list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:scrollingCache="false"
+		android:divider="#FF999999" android:dividerHeight="0.5sp"
+		android:layout_weight="1.0">
+	</ListView>
+</LinearLayout>

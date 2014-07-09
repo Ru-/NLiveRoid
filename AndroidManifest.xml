@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nliveroid.nlr.main"
+    android:installLocation="auto"
+    android:sharedUserId="nliveroid.bc"
+    android:versionCode="86"
+    android:versionName="0.9.89" >
+    <application
+        android:name=".NLiveRoid"
+        android:icon="@drawable/icon_nlr"
+        android:label="NLR" >
+        <activity
+            android:name="TopTabs"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Dummy"
+            android:allowTaskReparenting="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="live.nicovideo.jp"
+                    android:pathPrefix="/watch/lv"
+                    android:scheme="http" />
+                <data
+                    android:host="com.live.nicovideo.jp"
+                    android:pathPrefix="/watch/lv"
+                    android:scheme="http" />
+                <data
+                    android:host="www.live.nicovideo.jp"
+                    android:pathPrefix="/watch/lv"
+                    android:scheme="http" />
+                <data
+                    android:host="sp.live.nicovideo.jp"
+                    android:pathPrefix="/watch/lv"
+                    android:scheme="http" />
+                <data
+                    android:host="nico.ms"
+                    android:pathPrefix="/lv"
+                    android:scheme="http" />
+                <data
+                    android:host="live.nicovideo.jp"
+                    android:pathPrefix="/watch/co"
+                    android:scheme="http" />
+                <data
+                    android:host="com.live.nicovideo.jp"
+                    android:pathPrefix="/watch/co"
+                    android:scheme="http" />
+                <data
+                    android:host="www.live.nicovideo.jp"
+                    android:pathPrefix="/watch/co"
+                    android:scheme="http" />
+                <data
+                    android:host="sp.live.nicovideo.jp"
+                    android:pathPrefix="/watch/co"
+                    android:scheme="http" />
+                <data
+                    android:host="nico.ms"
+                    android:pathPrefix="/co"
+                    android:scheme="http" />
+                <data
+                    android:host="live.nicovideo.jp"
+                    android:pathPrefix="/community/co"
+                    android:scheme="http" />
+                <data
+                    android:host="com.live.nicovideo.jp"
+                    android:pathPrefix="/community/co"
+                    android:scheme="http" />
+                <data
+                    android:host="www.live.nicovideo.jp"
+                    android:pathPrefix="/community/co"
+                    android:scheme="http" />
+                <data
+                    android:host="sp.live.nicovideo.jp"
+                    android:pathPrefix="/community/co"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="CommunityTab"
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="SearchTab"
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="HistoryTab"
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="LiveTab"
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".parser.TutorialACT"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="FlashPlayer"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:process=":nlive_player" />
+        <activity
+            android:name="BCPlayer"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:process=":nlive_player" />
+        <activity
+            android:name="OverLay"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="PrimitiveSetting"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="Details"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="SettingTabs"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="TableWidthDialog"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="HandleNameList"
+            android:configChanges="orientation"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="EducationList"
+            android:configChanges="orientation"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="SoundSelectActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ColumnWidthACT"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="RecognizeDummy"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".TransDiscr"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:process=":nlive_player" />
+        <activity
+            android:name="TwitterAccount"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="nliveroid-tutorial.appspot.com"
+                    android:scheme="https" />
+                <data
+                    android:host="nliveroid-tutorial.appspot.com"
+                    android:scheme="Callback" />
+                <data
+                    android:host="nliveroid-tutorial.appspot.com"
+                    android:scheme="callback" />
+            </intent-filter>
+        </activity>
+        <!-- アラートはトップレベルにレシーバがないとできなかった -->
+        <service android:name=".BackGroundService" >
+             <intent-filter>
+        		<action android:name="nliveroid.nlr.main.BackGroundService" />
+    		</intent-filter>
+    	</service>
+        <service android:name="AlertHelper" android:process=":nlive_alert">
+            <intent-filter>
+        		<action android:name="nliveroid.nlr.main.AlertHelper" />
+    		</intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />s
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <uses-sdk android:minSdkVersion="4" />
+</manifest>

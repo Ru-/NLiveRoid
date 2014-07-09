@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	    android:background="#00ff00"
+	    android:id="@+id/list_ts_parent"
+	    android:stretchColumns="1"
+	>
+			<TableRow>
+				<CheckBox
+				    android:layout_span="1"
+	         android:layout_margin="1dp"
+	         android:visibility="gone"
+	         android:background="#000000"
+	         android:textColor="#ffffff"
+				android:id="@+id/list_ts_check"
+		android:gravity="left"
+				android:layout_height="fill_parent"
+				 android:layout_width="fill_parent"
+				 ></CheckBox>
+				  <TextView
+	         android:layout_margin="1dp"
+	         android:background="#000000"
+	         android:textColor="#ffffff"
+				    android:layout_span="2"
+				android:id="@+id/list_ts_title"
+				android:layout_height="fill_parent"
+				 android:layout_width="fill_parent"
+				android:text="放送タイトル"></TextView>
+				</TableRow>
+
+				<TableRow android:paddingBottom="30dp">
+				<TextView
+		android:gravity="left"
+				    android:layout_span="3"
+	         android:layout_margin="1dp"
+	         android:background="#000000"
+	         android:textColor="#ffffff"
+				 android:id="@+id/list_ts_status"
+				android:layout_height="fill_parent"
+				 android:layout_width="fill_parent"
+				 android:text="ステータス"></TextView>
+
+	</TableRow>
+</TableLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="#000000"
+     android:layout_height="fill_parent" android:layout_width="fill_parent"
+	>
+<ScrollView
+android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center">
+ <TableLayout
+		android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="10dip"
+						android:paddingRight="10dip"
+			android:paddingBottom="10dip"
+			android:stretchColumns="0">
+			<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <TextView
+            android:gravity="center"
+            android:text="コメント欄"
+    android:layout_width="wrap_content"
+    android:layout_height="25dip"></TextView>
+    </TableRow>
+ 	<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/update_comment"
+            android:gravity="center"
+            android:text="更新"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+     <TableRow
+        android:gravity="left">
+        <CheckBox android:id="@+id/is_get_between"
+            android:gravity="center"
+            android:text="間のコメントを取得"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></CheckBox>
+    </TableRow>
+
+<!--     <TableRow -->
+<!--     android:paddingTop="30dip" -->
+<!--         android:gravity="center"> -->
+<!--         <Button android:id="@+id/comment_regeneration" -->
+<!--             android:gravity="center" -->
+<!--             android:text="再起" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="40dip"></Button> -->
+<!--     </TableRow> -->
+    <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/disconnect_comment"
+            android:gravity="center"
+            android:text="切断"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+
+
+
+			<TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <TextView
+            android:gravity="center"
+            android:text="その他"
+    android:layout_width="wrap_content"
+    android:layout_height="25dip"></TextView>
+    </TableRow>
+    <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/oeration_reload_bt"
+            android:gravity="center"
+            android:text="プレイヤー更新"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+    <TableRow
+    android:paddingTop="30dip"
+        android:gravity="center">
+        <Button android:id="@+id/all_update"
+            android:gravity="center"
+            android:text="すべて更新"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"></Button>
+    </TableRow>
+    </TableLayout>
+</ScrollView>
+			</LinearLayout>

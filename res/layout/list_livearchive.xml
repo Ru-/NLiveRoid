@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	    android:background="#00ff00"
+	    android:id="@+id/archive_tablelayout"
+		android:stretchColumns="1"
+	>
+	<TableRow>
+	     <TextView
+	         android:layout_margin="1dp"
+	         android:background="#000000"
+	         android:layout_span="2"
+	         android:textColor="#ffffff"
+	         android:gravity="center_horizontal"
+				android:id="@+id/archive_title"
+				android:layout_height="fill_parent"
+				 android:layout_width="wrap_content"
+				android:text="タイトル"></TextView>
+	</TableRow>
+	<TableRow><!-- 日付とかと詳細文のTableRow  -->
+	    <TableLayout
+				    android:layout_span="1"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:gravity="left">
+			<TableRow>
+				<TextView
+				    android:layout_span="1"
+	         android:layout_margin="1dp"
+	         android:background="#000000"
+	         android:textColor="#ffffff"
+				android:id="@+id/archive_date"
+				android:layout_height="wrap_content"
+				 android:layout_width="wrap_content"
+				 android:text="放送日時"></TextView>
+				</TableRow>
+			<TableRow>
+				  <TextView
+				    android:layout_span="1"
+	         android:layout_margin="1dp"
+	         android:background="#000000"
+	         android:textColor="#ffffff"
+				android:id="@+id/archive_owner"
+				android:layout_height="wrap_content"
+				 android:layout_width="wrap_content"
+				android:text="放送主"></TextView>
+				</TableRow>
+			</TableLayout>
+				<TextView
+		android:gravity="left"
+				    android:layout_span="2"
+	         android:layout_margin="1dp"
+	         android:background="#000000"
+	         android:textColor="#ffffff"
+				 android:id="@+id/archive_desc"
+				android:layout_height="fill_parent"
+				 android:layout_width="wrap_content"
+				 android:text="説明文"></TextView>
+
+	</TableRow>
+</TableLayout>

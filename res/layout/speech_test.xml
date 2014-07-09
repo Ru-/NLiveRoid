@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0">
+    <TableRow>
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/speech_test_et"></EditText>
+</TableRow>
+<TableRow >
+    <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/speech_test_progress"
+        android:visibility="gone">
+<ProgressBar android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"></ProgressBar>
+<TextView android:text="初期化中"
+     android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>
+</TableRow>
+ <TableRow>
+    <Spinner
+        android:id="@+id/speech_test_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</TableRow>
+<TableRow >
+    <Button
+        android:id="@+id/speech_test_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play" />
+</TableRow>
+
+</TableLayout>
